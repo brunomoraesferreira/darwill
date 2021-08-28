@@ -1,0 +1,45 @@
+/* ----------------------------------------
+   Documento para definir os estilos padrão
+   inicial dos meus documentos css
+   ---------------------------------------- */
+
+/*Define a codificação da folha de estilo para Unicode UTF-8:*/
+@charset "utf-8";
+
+/*Seletor universal que corresponde a todos os elementos do documento*/
+* { 
+    box-sizing: border-box; /*incluir o preenchimento e a borda na largura e altura total de um elemento*/
+    margin: 0; /*zera a margem*/
+    padding: 0; /*zera o preenchimento*/
+    border: 0; /*zera a borda*/
+    font: inherit; /*o texto herdano valor das propriedades de seu elemento pai*/
+    font-size: 100%; /*estabelece como "tamanho relativo" do texto para 100% em relação as propriedades de seu elemento pai*/
+    vertical-align: baseline; /*o elemento é alinhado com a linha de base do elemento pai*/
+}
+/*links*/
+a {
+    text-decoration: none; /*retirar o sublinhado do texto*/
+    color: #000; /*define a cor do texto para preto*/
+}
+/*listas*/
+ol, ul {
+    list-style: none; /*remove os marcadoes de lista*/
+}
+/*tabelas*/
+table { 
+    border-collapse: collapse; /*as bordas são reduzidas em uma única borda*/
+    border-spacing: 0; /*No caso de border-collapse for diferente de "collapse
+                          zera o espaço entre as celulas adjacentes"*/
+}
+/* ----------------------------------------
+   especifica uma fonte para poder ser 
+   carregada, sem se limitar às chamadas 
+   de fontes "seguras para a web".
+   ---------------------------------------- */
+@font-face { 
+font-family: "nome_da-fonte"; /*Define o nome da fonte.*/
+src: url("endereco_da_fonte"); /*Define o caminho da fonte, de onde será baixada.*/
+}
+
+/* font-family: nome_da-fonte; */ 
+/* para usar a fonte           */
