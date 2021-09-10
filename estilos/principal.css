@@ -1,16 +1,156 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+@font-face { 
+   font-family: "vag-rounded-bt"; /*Define o nome da fonte.*/
+   src: url("../fontes/vag-rounded-bt.ttf"); /*Define o caminho da fonte, de onde será baixada.*/
+}
+@font-face { 
+   font-family: "minha-fonte"; /*Define o nome da fonte.*/
+   src: url("../fontes/"); /*Define o caminho da fonte, de onde será baixada.*/
+}
+   
+   /* font-family: nome_da-fonte; */ 
+   /* para usar a fonte           */
+
 /* ----------------------------------------
    Estilizar a pagina principal (index.html)
    ---------------------------------------- */
 
 /* ----------------------------------------
    O Bloco Contendo Inicial (BCI) é o 
-   bloco contendo raiz usado ao dimensionar 
-   elementos em relação a seus pais. 
+   bloco contendo os valozres raiz 
+   usados para dimensionar elementos 
+   em relação a seus pais. 
    ---------------------------------------- */
 html { 
     font-size: 3vw;
     height: 100%;
     width: 100%;
-  }
+}
+body {
+   background-color: rgb(180, 234, 255);
+ }
+
+ .conteiner {
+   height: 100%;
+   width: 100%;
+   position: fixed; /**/
+   background-color: rgb(39, 39, 39);
+   display: flex;
+   flex-direction: column;
+ } 
+
+/* Esconte a barra de rolagem nos navegadoeres Chrome, Safari e Opera */
+.bar-rol::-webkit-bar-rolrollbar {
+   display: none;
+}
+/* Esconte a barra de rolagem nos navegadoeres IE, Edge e Firefox */
+.bar-rol {
+   -ms-overflow-style: none;  /* IE e Edge */
+   scrollbar-width: none;  /* Firefox */
+}
+
+.cabecalho {
+   position: fixed;
+   width: 100%;
+}
+
+.bar-nav {
+   /*background-color: deepskyblue;*/
+   
+ }
+ .logos {
+   /*background-color: lightgoldenrodyellow;*/
+   background-color: rgb(80, 80, 80);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   padding: 1vw 0;
+ }
+ .logomarca {
+   /*background-color: #ffd9fe;*/
+   display: flex;
+ }
+ .logomarca img {
+   width: 2rem;
+   height: 2rem;
+ }
+ .logotipo {
+   /*background-color: #d3bdfc;*/
+   font-size: 2rem;
+   color: white;
+   font-family: 'minha-fonte';
+}
+.menu {
+   /*background-color: black;*/
+   position: absolute;
+   right: 5vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-end;
+   width: 2rem;
+   height: 1.5rem;
+   
+}
+.barra-a {
+   background-color: white;
+   width: 1.2em;
+   height: 0.25rem;
+   border-radius: 0.1rem;
+}
+.barra-b {
+   background-color: white;
+   width: 2em;
+   height: 0.25rem;
+   border-radius: 0.1rem;
+}
+.principal {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .brand {
+    width: 100%;
+    height: 25rem;
+    background-image: url(../imagens/pexels-mateusz-dach-450035.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: vag-rounded-bt;
+
+   }
+
  
+
+.titulos {
+   width: 85%;
+
+}
+
+.titulos h1 {
+   color: white;
+   font-size: 3.2rem;
+   display: inline-flex;
+   flex-direction: column;
+   align-items: flex-start;
+   letter-spacing: 0.1rem;
+}
+.titulos h2 {
+   color: wheat;
+   font-size: 1rem;
+}
+
+/*
+ .sobre {background-color: rgb(255, 252, 85);}
+ .portfolio {background-color: rgb(96, 85, 255);}
+ .servicos {background-color: burlywood}
+ .habilidades {background-color: rgb(85, 255, 99);}
+ .contato {background-color: rgb(235, 85, 255);}
+ */
