@@ -49,7 +49,6 @@ body {
     flex-basis: 5rem;
  }
  .principal {
-    background-color: rgb(200, 255, 198);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -60,15 +59,56 @@ body {
  }
 
  .proposito {
-   background-color: rgb(253, 255, 139);
+   background-image: url(../imagens/pexels-mateusz-dach-450035.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
    flex-basis: 40%;
+   display: flex;
+   flex-direction: column;
+
  }
  .portfolio {
-   background-color: rgb(139, 255, 149);
    flex-grow: 1;
  }
+ .projetos {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
 
+ }
+.nav-proj {
+   background-color: red;
+   flex-basis: 10%;
+   display: flex;
+   align-items: center;
+}
+.etiqueta {
+   flex-grow: 1;
+}
+.direcionar {
+   flex-grow: 1;
+}
+.slider-container {
+   background-color: blueviolet;
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   width: max-content;
+   overflow: hidden;
+   transform: translateX(0);
+   transition: transform 0.3s ease-out;
+   cursor: grab;
+}
+.slide {
+   height: 20rem;
+   width: 14rem;
+   border-radius: 5%;
+   background-color: white;
+   margin-right: 2rem;
+ }
 
+ /***/
 
 
 
