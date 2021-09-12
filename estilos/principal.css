@@ -90,22 +90,33 @@ body {
    flex-grow: 1;
 }
 .slider-container {
-   background-color: blueviolet;
-   flex-grow: 1;
+   height: 100%;
    display: flex;
    align-items: center;
-   width: max-content;
    overflow: hidden;
-   transform: translateX(0);
+   transform: translate(0);
    transition: transform 0.3s ease-out;
    cursor: grab;
 }
 .slide {
-   height: 20rem;
-   width: 14rem;
-   border-radius: 5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0 0.1rem;
+   margin-left: 1rem;
    background-color: white;
-   margin-right: 2rem;
+   user-select: none;
+ }
+ .slide img {
+    width: 10rem;
+    height: auto;
+ }
+ .slide h2 {
+    font-size: 1.5rem;
+}
+ .slide h4 {
+   font-size: 1rem;
  }
 
  /***/
