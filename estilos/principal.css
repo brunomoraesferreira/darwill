@@ -25,7 +25,7 @@
    em relação a seus pais. 
    ---------------------------------------- */
 html { 
-    font-size: 3vw;
+    font-size: 16PX;
     height: 100%;
     width: 100%;
 }
@@ -46,7 +46,7 @@ body {
 
  .cabecalho {
     background-color: rgb(198, 234, 255);
-    flex-basis: 5rem;
+    flex-basis: 3.5rem;
  }
  .principal {
     flex-grow: 1;
@@ -55,31 +55,30 @@ body {
  }
  .rodape {
     background-color: rgb(255, 240, 240);
-    flex-basis: 5rem;
+    flex-basis: 3.5rem;
  }
 
- .proposito {
+ .apresentacao {
    background-image: url(../imagens/pexels-mateusz-dach-450035.png);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-   flex-basis: 40%;
+   flex-basis: 14rem;
    display: flex;
    flex-direction: column;
 
  }
- .portfolio {
+ .pasta {
    flex-grow: 1;
  }
  .projetos {
    display: flex;
    flex-direction: column;
    height: 100%;
-
  }
 .nav-proj {
    background-color: red;
-   flex-basis: 10%;
+   flex-basis: 3rem;
    display: flex;
    align-items: center;
 }
@@ -107,16 +106,21 @@ body {
    margin-left: 4rem;
    background-color: white;
    user-select: none;
+   border-radius: 0.2rem;
  }
  .slide img {
-    width: 16rem;
-    height: auto;
+    width: 13rem;
+    height: 15rem;
  }
  .slide h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: -0.4rem;
 }
  .slide h4 {
-   font-size: 1rem;
+   font-size: 1.5rem;
+ }
+ .slide a {
+   font-size: 1.3rem;
  }
 
  /***/
