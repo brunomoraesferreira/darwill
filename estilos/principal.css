@@ -104,12 +104,12 @@ body {
    align-items: center;
    justify-content: center;
    padding: 0 0.1rem;
-   margin-left: 1rem;
+   margin-left: 4rem;
    background-color: white;
    user-select: none;
  }
  .slide img {
-    width: 10rem;
+    width: 16rem;
     height: auto;
  }
  .slide h2 {
