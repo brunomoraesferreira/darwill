@@ -35,7 +35,7 @@ body {
  [class*="col-"] {
    width: 100%;
  }
- .conteudo {
+ .conteiner {
    height: 100%;
    /*width: 100%;*/
    position: fixed; /**/
@@ -54,8 +54,7 @@ body {
     flex-direction: column;
  }
  .rodape {
-    background-color: rgb(255, 240, 240);
-    flex-basis: 3.5rem;
+    display: none;
  }
 
  .apresentacao {
@@ -66,67 +65,25 @@ body {
    flex-basis: 14rem;
    display: flex;
    flex-direction: column;
+ }
+   .conteudo {
+      flex-grow: 1;
+   }
+   .menu-site {
+      overflow: hidden;
+      border: 1px solid rgb(0, 132, 255);
+      background-color: rgb(0, 183, 255);
+      display: flex;
+   }
+   .menu-site button {
+      cursor: pointer;
+      padding: 1rem 0.3rem;
+      transition: 0.3s;
+      flex-grow: 1;
+      background-color: transparent;
+      color: #f2f2f2;
 
- }
- .pasta {
-   flex-grow: 1;
- }
- .projetos {
-   display: flex;
-   flex-direction: column;
-   height: 100%;
- }
-.nav-proj {
-   background-color: red;
-   flex-basis: 3rem;
-   display: flex;
-   align-items: center;
-}
-.etiqueta {
-   flex-grow: 1;
-}
-.direcionar {
-   flex-grow: 1;
-}
-.slider-container {
-   height: 100%;
-   display: flex;
-   align-items: center;
-   overflow: hidden;
-   transform: translate(0);
-   transition: transform 0.3s ease-out;
-   cursor: grab;
-}
-.slide {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding: 0 0.5rem;
-   margin-left: 4rem;
-   background-color: rgb(26, 26, 26);
-   color: white;
-   user-select: none;
-   border-radius: 0.2rem;
- }
- .slide img {
-    width: 13rem;
-    height: 14rem;
- }
- .slide h2 {
-    font-size: 1.8rem;
-    margin-bottom: -0.4rem;
-}
- .slide h4 {
-   font-size: 1.4rem;
- }
- .slide a {
-   font-size: 1rem;
-   padding: 0.3rem 0.8rem;
-   margin: 1rem 0;
-   border-radius: 0.2rem;
-   background-color: #444;
- }
+   }
 
  /***/
 

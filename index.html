@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="conteudo col-1">
+    <div class="conteiner col-1">
         <header class="cabecalho">
             Darwill
         </header>
@@ -21,38 +21,36 @@
                 Incríveis
                 UI/UX DESIGNER & DESENVOLVEDOR
             </section>
-            <section class="pasta">
-                <div class="projetos">
-                    <div class="nav-proj">
-                        <div class="etiqueta">Projetos</div>
-                        <div class="direcionar">Ver todos os trabalhos</div>
-                    </div>
-                    <div class="slider-container">
-                        <div class="slide">
-                            <h2>slide a</h2>
-                            <h4>texto</h4>
-                            <img src="imagens/temporaria.png" alt="">
-                            <a href="#" class="btn">viste agora</a>
-                        </div>
-                        <div class="slide">
-                            <h2>slide b</h2>
-                            <h4>texto</h4>
-                            <img src="imagens/temporaria.png" alt="">
-                            <a href="#" class="btn">viste agora</a>
-                        </div>
-                        <div class="slide">
-                            <h2>slide c</h2>
-                            <h4>texto</h4>
-                            <img src="imagens/temporaria.png" alt="">
-                            <a href="#" class="btn">viste agora</a>
-                        </div>
-                    </div>
-                </div>
+            <section id="trabalhos" class="conteudo">
+                trabalhos
             </section>
+            <section id="portfolio" class="conteudo">
+                portfolio
+            </section>
+            <section id="habilidades"  class="conteudo">
+                habilidades
+            </section>
+            <section id="servicos"  class="conteudo">
+                servicos
+            </section>
+            <section id="sobre"  class="conteudo">
+                sobre
+            </section>
+            <section id="contato"  class="conteudo">
+                contato
+            </section>
+            <nav class="menu-site">
+                <button class="navlinks" onclick="menusite(event, 'trabalhos')">aaaaa</button>
+                <button class="navlinks" onclick="menusite(event, 'portfolio')">bbbbb</button>
+                <button class="navlinks" onclick="menusite(event, 'habilidades')">ccccc</button>
+                <button class="navlinks" onclick="menusite(event, 'servicos')">ddddd</button>
+                <button class="navlinks" onclick="menusite(event, 'sobre')">eeeee</button>
+                <button class="navlinks" onclick="menusite(event, 'contato')">fffff</button>  
+            </nav>
         </main>
         <footer class="rodape"></footer>
     </div>
-    <script src="js\deslizar.js"></script>
+    <script src="js\navegacao.js"></script>
 </body>
 
 </html>
