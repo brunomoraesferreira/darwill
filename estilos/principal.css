@@ -91,7 +91,11 @@ body {
       height: auto;
    }
    .menu-nav-site button span {
-      font-size: 1rem;
+      font-size: 0.8rem;
+   }
+
+   .menu-nav-site button:nth-child(3) span {
+      font-size: 0.65rem;
    }
 
  /***/
