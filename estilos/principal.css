@@ -45,10 +45,15 @@ body {
  }
 
  .cabecalho {
-   background-color: rgba(0, 183, 255, 0.137);
    flex-basis: 3.5rem;
    position: fixed;
    width: 100%;
+ }
+ .cabecalho h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: 700;
+    color: white;
  }
  .principal {
     flex-grow: 1;
@@ -62,19 +67,19 @@ body {
  .apresentacao {
    background-image: url(../imagens/pexels-mateusz-dach-450035.png);
    background-repeat: no-repeat;
-   background-size: 100% 100%;
+   background-size: 110% 110%;
    background-position: center center;
-   flex-basis: 14rem;
+   flex-basis: 16rem;
    display: flex;
    flex-direction: column;
-   justify-content: center;
  }
  .apresentacao span {
    color: white;
    font-size: 2rem;
-   font-family: vag-rounded-bt;
+   font-family: 'vag-rounded-bt';
    letter-spacing: 0.2rem;
    position: relative;
+   top: 4.5rem;
    left: 3rem;
  }
  .apresentacao span:last-child {
