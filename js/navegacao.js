@@ -10,6 +10,6 @@ function menusite(evt, guianome) {
     }
     document.getElementById(guianome).style.display = "flex";
     evt.currentTarget.className += " active";
-  }
+}
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
