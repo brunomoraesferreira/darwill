@@ -96,6 +96,9 @@ body {
 
    .menu-nav-site button:nth-child(3) span {
       font-size: 0.65rem;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
    }
 
  /***/
