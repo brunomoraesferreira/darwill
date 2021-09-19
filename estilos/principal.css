@@ -45,8 +45,10 @@ body {
  }
 
  .cabecalho {
-   background-color: rgb(0, 183, 255);
+   background-color: rgba(0, 183, 255, 0.137);
    flex-basis: 3.5rem;
+   position: fixed;
+   width: 100%;
  }
  .principal {
     flex-grow: 1;
@@ -65,6 +67,21 @@ body {
    flex-basis: 14rem;
    display: flex;
    flex-direction: column;
+   justify-content: center;
+ }
+ .apresentacao span {
+   color: white;
+   font-size: 2rem;
+   font-family: vag-rounded-bt;
+   letter-spacing: 0.2rem;
+   position: relative;
+   left: 3rem;
+ }
+ .apresentacao span:last-child {
+    color: wheat;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: normal;
  }
    .conteudo {
       flex-grow: 1;
