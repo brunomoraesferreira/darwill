@@ -84,7 +84,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0.5rem 0;
+      padding-bottom: 0.5rem;
    }
    .menu-nav-site button img {
       width: 3rem;
@@ -92,6 +92,7 @@ body {
    }
    .menu-nav-site button span {
       font-size: 0.65rem;
+      font-weight: 700;
    }
 
 
