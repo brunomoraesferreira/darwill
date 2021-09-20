@@ -1,6 +1,6 @@
 function menusite(evt, guianome) {
     var i, conteudo, navlinks;
-    conteudo = document.getElementsByClassName("conteudo");
+    conteudo = document.getElementsByClassName("secionamento");
     for (i = 0; i < conteudo.length; i++) {
       conteudo[i].style.display = "none";
     }

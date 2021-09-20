@@ -6,13 +6,6 @@
    font-family: "vag-rounded-bt"; /*Define o nome da fonte.*/
    src: url("../fontes/vag-rounded-bt.ttf"); /*Define o caminho da fonte, de onde será baixada.*/
 }
-@font-face { 
-   font-family: "minha-fonte"; /*Define o nome da fonte.*/
-   src: url("../fontes/"); /*Define o caminho da fonte, de onde será baixada.*/
-}
-   
-   /* font-family: nome_da-fonte; */ 
-   /* para usar a fonte           */
 
 /* ----------------------------------------
    Estilizar a pagina principal (index.html)
@@ -35,7 +28,7 @@ body {
  [class*="col-"] {
    width: 100%;
  }
- .conteiner {
+ .conteiner-site {
    height: 100%;
    /*width: 100%;*/
    position: fixed; /**/
@@ -64,7 +57,7 @@ body {
     display: none;
  }
 
- .apresentacao {
+ .letreiro {
    background-image: url(../imagens/pexels-mateusz-dach-450035.png);
    background-repeat: no-repeat;
    background-size: 110% 110%;
@@ -73,7 +66,7 @@ body {
    display: flex;
    flex-direction: column;
  }
- .apresentacao span {
+ .letreiro span {
    color: white;
    font-size: 2rem;
    font-family: 'vag-rounded-bt';
@@ -82,15 +75,17 @@ body {
    top: 4.5rem;
    left: 3rem;
  }
- .apresentacao span:last-child {
+ .letreiro span:last-child {
     color: wheat;
     font-size: 0.8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: normal;
  }
-   .conteudo {
+   .secionamento {
       flex-grow: 1;
       padding: 0.1rem 1rem;
+      display: flex;
+      flex-direction: column;
    }
    .menu-nav-site {
       overflow: hidden;
@@ -121,13 +116,44 @@ body {
 
  /***/
 
+.conteiner-sec-trab {
+   flex-grow: 1;
+   background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.carrossel {
+   height: 100%;
+   border: 2px solid gray;
+   background-color: pink;
+   overflow: hidden;
+   position: relative;
+}
+.deslizante { /*slider*/
+   height: 100%;
+   width: calc(100% * 5);
+   display: flex;
+   /*transform: translate(-80%);*/
+   transition: all 0.3s;
+}
 
+.deslizante section {
+   flex-basis: 100%;
+   background-color: lightgreen;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
-
-/*
- .sobre {background-color: rgb(255, 252, 85);}
- .portfolio {background-color: rgb(96, 85, 255);}
- .servicos {background-color: burlywood}
- .habilidades {background-color: rgb(85, 255, 99);}
- .contato {background-color: rgb(235, 85, 255);}
- */
+.controle .seta {
+   position: absolute;
+   top: 50%;
+   cursor: pointer;
+}
+.esq {
+   left: 1rem;
+}
+.dir {
+   right: 1rem;
+}
