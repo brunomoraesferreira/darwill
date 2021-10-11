@@ -1,18 +1,64 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/*font-family: 'Roboto', sans-serif;*/
-
-@font-face { 
-   font-family: "vag-rounded-bt"; /*Define o nome da fonte.*/
-   src: url("../fontes/vag-rounded-bt.ttf"); /*Define o caminho da fonte, de onde será baixada.*/
-}
-
-
 html { 
-    font-size: 160PX;
+    font-size: 16PX;
     height: 100%;
     width: 100%;
 }
 body {
-   background-color: rgb(209, 138, 129);
+   background-color: rgb(129, 193, 209);
  }
+ .conteiner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+ }
+ .cabecalho, .rodape {
+   height: 10%;
+   background-color: #0FB2F2;
+ }
+
+ .principal {
+   height: 80%;
+   background-color: #77CFF2;
+   display: flex;
+   flex-direction: column;
+   overflow-y: scroll;
+   padding: 0.5rem;
+ }
+ .linha {
+    width: 100%;
+    min-height: 5rem;
+    border-radius: 0.5rem;
+    background-color: #BDE3F2;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+ }
+ .enunciado {
+    padding: 0.1rem 0;
+ }
+ .exercicio {
+    flex-grow: 1;
+    display: flex;
+   align-items: center;
+ }
+ hr {
+   border-bottom: 1px solid gray;
+   margin: 0 -0.5rem;
+}
+#exercicio-002 button {
+   width: 5rem;
+   height: 2rem;
+   border-radius: 0.25rem;
+   background-color: limegreen;
+   cursor: pointer;
+   margin-right: 1rem;
+}
+#exercicio-002 button:hover {
+   background-color: chartreuse;
+}
+#exercicio-002 button:active {
+   background-color: greenyellow;
+}

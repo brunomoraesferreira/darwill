@@ -2,11 +2,37 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos/geral.css">
+    <link rel="stylesheet" href="estilos/principal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Darwill</title>
 </head>
 <body>
-    ois
+    <div class="conteiner">
+        <header class="cabecalho">Meu caderno de JavaScript</header>
+        <main class="principal">
+            <div class="linha">
+                <div class="enunciado">Alterar o conteúdo e o valor de atributos HTML</div>
+                <hr>
+                <div id="exercicio-001" class="exercicio"></div>
+            </div>
+            <div class="linha">
+                <div class="enunciado">Pedir um nome e mostra-lo</div>
+                <hr>
+                <div id="exercicio-002" class="exercicio">
+                    <button type="button" onclick="pedirMostrarNome()"> executar </button>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="enunciado">Pedir valores, e mostrar o resultado da soma deles</div>
+                <hr>
+                <div id="exercicio-002" class="exercicio">
+                    <button type="button" onclick="somarDoisNumeros()"> executar </button>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">navegacao</footer>
+    </div>
+    <script src="js/exercicios.js"></script>
 </body>
 </html>
