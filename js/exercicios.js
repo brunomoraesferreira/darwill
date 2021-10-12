@@ -15,4 +15,9 @@ function somarDoisNumeros() {
     window.alert("A soma dos valores é " + soma);
     return;
 }
-//Number.parseInt(), Number.parsefloat(), parseInt(), parseFloat(), Number().
+
+const converterNumEmTexto = {
+    numA: 17,
+    numB: 1.8
+};
+document.getElementById("exercicio-004").innerHTML = String(converterNumEmTexto.numA)+5+converterNumEmTexto.numB.toString();

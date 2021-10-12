@@ -37,18 +37,19 @@ body {
     padding: 0.5rem 1rem;
  }
  .enunciado {
-    padding: 0.1rem 0;
+    padding: 0.2rem 0;
  }
  .exercicio {
+    padding: 1rem 0 0 0;
     flex-grow: 1;
     display: flex;
-   align-items: center;
+    align-items: center;
  }
  hr {
    border-bottom: 1px solid gray;
    margin: 0 -0.5rem;
 }
-#exercicio-002 button {
+.botaoExecutar  {
    width: 5rem;
    height: 2rem;
    border-radius: 0.25rem;
@@ -56,9 +57,9 @@ body {
    cursor: pointer;
    margin-right: 1rem;
 }
-#exercicio-002 button:hover {
+.botaoExecutar:hover {
    background-color: chartreuse;
 }
-#exercicio-002 button:active {
+.botaoExecutar:active {
    background-color: greenyellow;
 }
