@@ -26,7 +26,7 @@ body {
    overflow-y: scroll;
    padding: 0.5rem;
  }
- .linha {
+ .cartao {
     width: 100%;
     border-radius: 0.5rem;
     background-color: #BDE3F2;

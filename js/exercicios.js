@@ -30,11 +30,14 @@ const conc = {
 };
 document.getElementById("exercicio-005").innerHTML = `concatenando: ${conc.pal} com ${conc.num}`;
 //exercicio-006
-
 document.getElementById("exercicio-006").innerHTML = `Quantas letras tem o nome ${conc.nome}: ${conc.nome.length}<br>
                                                       Escrever o nome ${conc.nome} em caixa alta: ${conc.nome.toUpperCase()}<br>
                                                       Escrever o nome ${conc.nome} em caixa baixa: ${conc.nome.toLowerCase()}`;
-
+//exercicio-007
 document.getElementById("exercicio-007").innerHTML = `Formatar o número ${conc.mon}<br> 
                                                       A primeira formatação ${conc.mon.toFixed(2).replace('.',',')}<br>
                                                       A segunda formatação: ${conc.mon.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`;
+//exercicio-006
+var v1 = 1981;
+var v2 = 'brasília';
+var v3 = ['a', 'Banana', 1];
