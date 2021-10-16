@@ -6,6 +6,9 @@ html {
 body {
    background-color: rgb(129, 193, 209);
  }
+
+
+
  .conteiner {
     width: 100%;
     height: 100%;
@@ -27,13 +30,49 @@ body {
    padding: 0.5rem;
  }
  .cartao {
+   background-color: deepskyblue;
+   position: relative;
+   border: 1px groove dodgerblue;
+   border-radius: 0.5rem;
+   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+   overflow: hidden;
+   cursor: pointer;
+
+ }
+ .virar {
+   position: relative;
+   width: 100%;/**/
+   height: 6rem;/**/
+   
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+   
+ }
+ #trocar:checked ~ .cartao .virar {
+   transform: rotateX(180deg);
+ }
+ #trocar {
+	display: none;
+}
+ .frente_do_cartao, .verso_do_cartao {
     width: 100%;
+    height: 6rem;
+    overflow-y: scroll;
     border-radius: 0.5rem;
-    background-color: #BDE3F2;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     padding: 0.5rem 1rem;
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+ }
+ .frente_do_cartao {
+   background-color: ghostwhite;
+ }
+ .verso_do_cartao {
+   background-color: lightgreen;
+   transform: rotateX(180deg);
  }
  .enunciado {
     padding: 0.2rem 0;
@@ -45,17 +84,12 @@ body {
    border-bottom: 1px solid gray;
    margin: 0 -0.5rem;
 }
-.botaoExecutar  {
-   width: 5rem;
-   height: 2rem;
-   border-radius: 0.25rem;
-   background-color: limegreen;
-   cursor: pointer;
-   margin-right: 1rem;
-}
-.botaoExecutar:hover {
-   background-color: chartreuse;
-}
-.botaoExecutar:active {
-   background-color: greenyellow;
-}
+::-webkit-scrollbar {
+   width: 0.15rem;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+     background: dodgerblue;
+     
+     
+ }
