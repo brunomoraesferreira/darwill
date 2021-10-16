@@ -16,16 +16,16 @@ body {
     display: flex;
     flex-direction: column;
  }
- .cabecalho {
+ .cabecalho, .rodape {
    height: 10%;
    background-color: #0FB2F2;
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
- .rodape {
-   height: 10%;
-   background-color: #0FB2F2;
- }
-
+.cabecalho {
+   font-family: ;
+}
  .principal {
    height: 80%;
    background-color: #77CFF2;
