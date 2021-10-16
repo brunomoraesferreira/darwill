@@ -16,7 +16,12 @@ body {
     display: flex;
     flex-direction: column;
  }
- .cabecalho, .rodape {
+ .cabecalho {
+   height: 10%;
+   background-color: #0FB2F2;
+   
+ }
+ .rodape {
    height: 10%;
    background-color: #0FB2F2;
  }
@@ -85,11 +90,6 @@ body {
    margin: 0 -0.5rem;
 }
 ::-webkit-scrollbar {
-   width: 0.15rem;
- }
- 
- ::-webkit-scrollbar-thumb {
-     background: dodgerblue;
-     
-     
- }
+   display: none;
+}
+
