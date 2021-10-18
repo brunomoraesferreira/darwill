@@ -24,7 +24,7 @@ body {
    align-items: center;
  }
 .cabecalho {
- 
+   font-family: ;
 }
  .principal {
    height: 80%;
@@ -82,7 +82,7 @@ body {
  .enunciado {
     padding: 0.2rem 0;
  }
- .exercicio {
+ .atividade {
     padding: 0.5rem 0;
  }
  hr {
