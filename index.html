@@ -11,26 +11,16 @@
     <div class="conteiner">
         <header class="cabecalho">Meu caderno de JavaScript</header>
         <main class="principal">
-            <input type="checkbox" id="trocar"/>
-            <label class="cartao" for="trocar"> 
-                <div type="checkbox" class="virar">
-                    <div class="frente_do_cartao">
-                        <div class="enunciado">Escrever a frase "Ola, Mundo!" e alterar sua cor para vermelho, usando JavaScript</div>
-                        <hr>
-                        <div id="atividade-001" class="atividade"></div>
-                    </div>
-                    <div class="verso_do_cartao">
-                        <div class="enunciado">Código</div>
-                        <hr>
-                        <div id="atividade-001" class="atividade">
-                            <code>
-                                    document.getElementById   ("atividade-001").innerHTML = "Ola Mundo!";
-                                    document.getElementById   ("atividade-001").style.color = "red";
-                            </code>
-                        </div>
-                    </div>
+            <div class="cartao flip-container">
+                <div class="virar flipper">
+                  <div class="anverso front">
+                    <img src="https://picsum.photos/id/411/300/200" />
+                  </div>
+                  <div class="reverso back">
+                    <img src="https://picsum.photos/id/249/300/200" />
+                  </div>
                 </div>
-            </label>
+            </div>
         </main>
         <footer class="rodape">navegacao</footer>
     </div>
