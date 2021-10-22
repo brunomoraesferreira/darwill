@@ -10,7 +10,10 @@ html {
 body
 {
   font-size:2rem;
-  background-color: LightCyan;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .conteiner {
   width:100%;
@@ -23,7 +26,6 @@ body
 #cabecalho, #rodape {
   height:10%;
   padding: 0.2rem;
-  background-color: LightBlue;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +42,8 @@ h1 {
 .recipiente_cartao {
   width:100%;
   height:100%;
-  background-color:LightGreen;
+  
+
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -177,18 +180,120 @@ h1 {
   height: 94.5%;
   background-color: white;
 }
-.rolagem-dir {
+.rolagem_dir {
   width: 2.5%;
   height: 94.5%;
   background-color: #e0e0e0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.rolagem-bai {
+.rolagem_bai {
   width: 97.5%;
   height: 5.5%;
   background-color: #e0e0e0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.rolagem-can {
+.rolagem_can {
   width: 2.5%;
   height: 5.5%;
   background-color: #d6d6d6;
+  overflow: hidden;
+  position: relative;
+}
+
+.mov_cim {
+  width: 100%;
+  height: 1rem;
+  background-color: #C0C0C0;
+  border: 0.1rem outset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mov_bai {
+  width: 100%;
+  height: 1rem;
+  background-color: #C0C0C0;
+  border: 0.1rem outset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mov_esq {
+  width: 1rem;
+  height: 100%;
+  background-color: #C0C0C0;
+  border: 0.1rem outset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mov_dir {
+  width: 1rem;
+  height: 100%;
+  background-color: #C0C0C0;
+  border: 0.1rem outset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lin_triA {
+  height: 0%;
+  width: 110%;
+  background-color: transparent;
+  border-bottom: 2px outset;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 50%;
+}
+.lin_triB {
+  height: 0%;
+  width: 110%;
+  background-color: transparent;
+  border-bottom: 2px outset ;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 75%;
+}
+.lin_triC {
+  height: 0%;
+  width: 110%;
+  background-color: transparent;
+  border-bottom: 2px outset ;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 105%;
+}
+
+.set_cim {
+  border-left: 0.2rem solid transparent;
+  border-right: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid #797979;
+}
+
+.set_bai {
+  border-left: 0.2rem solid transparent;
+  border-right: 0.2rem solid transparent;
+  border-top: 0.2rem solid #797979;
+}
+
+.set_esq {
+  border-top: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+  border-right: 0.25rem solid #797979;
+}
+
+.set_dir {
+  border-top: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+  border-left: 0.25rem solid #797979;
 }
