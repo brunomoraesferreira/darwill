@@ -67,7 +67,8 @@ h1 {
   display:flex;
   flex-direction: column;
   border: 0.06rem outset;
-  /*box-shadow: 5px 5px 5px 0px #1a1a1a;*/
+  box-shadow: 5px 5px 5px 1px rgba(85, 85, 85, 0.5);
+
   
 }
 .barra {
@@ -75,6 +76,7 @@ h1 {
   background-color: #c7c7c7;
   background-color: #c7c7c7;
   color: White;
+  cursor: default;
 }
 .corpo {
   flex-grow: 1;
@@ -97,7 +99,7 @@ h1 {
   width:100%;
   background-image: linear-gradient(to right, #092268 , #559CCA);
   background-color:#092268;
-  padding: 0.2rem 0.2em;
+  padding: 0.2rem 0.2em 0.1rem ;
   
 }
 .descricao {
@@ -109,7 +111,7 @@ h1 {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 .min, .max, .fec {
   width: 1.5rem;
@@ -119,6 +121,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .menu {
   font-size:0.8rem;
@@ -127,6 +130,7 @@ h1 {
 }
 .menu span {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .quadrado {
@@ -141,16 +145,18 @@ h1 {
   height: 20%;
   background-color: black;
   border: 1px solid black;
+  border-bottom: 0;
 }
 .part-b {
   height: 80%;
   background-color: transparent;
   border: 1px solid black;
+  border-top: 0;
 }
 .part-c {
   height: 25%;
   background-color: black;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .part-d {
   height: 75%;
@@ -181,6 +187,7 @@ h1 {
   width: 97.5%;
   height: 94.5%;
   background-color: white;
+  padding-left: 0.5rem;
 }
 .rolagem_dir {
   width: 2.5%;
