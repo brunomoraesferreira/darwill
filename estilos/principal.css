@@ -324,3 +324,9 @@ h1 {
   border-bottom: 0.2rem solid transparent;
   border-left: 0.25rem solid #797979;
 }
+
+@media screen and (orientation: landscape) {
+  html {
+    font-size: 8px;
+  }
+}
