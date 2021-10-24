@@ -30,7 +30,7 @@ body
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: red;
+  /*background-color: red;*/
 }
 #principal{
   flex-grow: 1;
@@ -330,5 +330,15 @@ h1 {
   html {
     font-size: 12px;
   }
-
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (orientation: landscape) {
+  html {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
 }
