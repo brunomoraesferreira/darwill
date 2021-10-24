@@ -98,7 +98,6 @@ h1 {
   flex-direction: row;
   width:100%;
   background-image: linear-gradient(to right, #092268 , #559CCA);
-  background-color:#092268;
   padding: 0.2rem 0.2em 0.1rem ;
   
 }
@@ -123,16 +122,35 @@ h1 {
   justify-content: center;
   cursor: pointer;
 }
+
+.max:hover, .min:hover, .fec:hover {
+  background-color: #bababa;
+}
+.max:active, .min:active, .fec:active {
+  border: 0.06rem inset;
+  background-color: #b7b7b7;
+}
 .menu {
   font-size:0.8rem;
   color:black;
-  padding: 0.4rem 0.2rem 0;
+  padding: 0.3rem 0.2rem 0;
+  height: 1.3rem;
 }
 .menu span {
-  margin-right: 1rem;
   cursor: pointer;
+  text-align: center;
+  padding: 0 0.5rem;
+  background-color: transparent;
+  border: 0.01rem solid transparent;
 }
-
+.menu span:hover {
+  background-color: rgba(190, 190, 190, 0.7);
+  border: 0.01rem solid#96969650;
+}
+.menu span:active {
+  background-color: rgba(182, 182, 182, 0.7);
+  border: 0.01rem solid#acacac50;
+}
 .quadrado {
 	width: 60%;
 	height: 70%;
