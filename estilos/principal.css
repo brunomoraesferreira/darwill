@@ -17,7 +17,8 @@ body
 }
 #cabecalho {
   height:10%;
-  max-height:6rem;
+  min-height: 4rem;
+  max-height: 6rem;
   padding: 0.2rem;
   display:flex;
   flex-direction: column;
@@ -28,13 +29,14 @@ body
 }
 #rodape {
   height:10%;
+  min-height: 4rem;
   max-height:5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   background-color:DodgerBlue;
 }
 #principal{
   flex-grow: 1;
-  padding: 0.7rem;
+  padding: 0.5rem;
 }
 h1 {
   font-size:3rem;
@@ -72,6 +74,7 @@ h1 {
   color: white;
   font-weight: 600;
   letter-spacing: 0.1rem;
+  font-size: 0.7rem;
 }
 button:hover {
   background-color: rgba(150, 125, 255, 0.2);
@@ -79,7 +82,7 @@ button:hover {
   /*border-bottom: 0.1rem outset red;*/
 }
 button:active {
-  background-color: rgba(125, 200, 255, 0.2);
+  background-color: rgba(150, 125, 255, 0.2);
   border: 0.05rem inset DodgerBlue;
   /*border-bottom: 0.1rem inset green;*/
 }
