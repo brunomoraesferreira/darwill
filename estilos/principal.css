@@ -29,8 +29,8 @@ body
 }
 #cabecalho {
   height:10%;
-  min-height: 3rem;
-  max-height: 3rem;
+  min-height: 4rem;
+  max-height: 4rem;
   padding: 0.2rem;
   display:flex;
   flex-direction: column;
@@ -41,8 +41,8 @@ body
 }
 #rodape {
   height:10%;
-  min-height: 3rem;
-  max-height: 3rem;
+  min-height: 4rem;
+  max-height: 4rem;
   padding: 0.4rem 0;
   background-color: DodgerBlue;
 }
@@ -82,7 +82,7 @@ h1 {
   display: flex;
 }
 .menu button {
-  width:15%;
+  flex-grow: 1;
   height:100%;
   margin: 0 0.2rem;
   background-color: rgba(125, 200, 255, 0.2);
@@ -99,8 +99,18 @@ button:hover {
 }
 button:active {
   background-color: rgba(150, 125, 255, 0.2);
-  border: 0.05rem inset DodgerBlue;
+  border: 0.1rem inset DodgerBlue;
   /*border-bottom: 0.1rem inset green;*/
+}/*
+button img {
+  padding: 0.3rem;
+  border-radius: 50% 0;
+  box-shadow: 1px 1px 2px blue, -1px -1px 2px ;
 }
 
-
+button:hover img {
+  box-shadow: 1px 1px 2px lightgreen, -1px -1px 2px lightpink;
+}
+button:active img {
+  box-shadow: 1px 1px 2px lightpink, -1px -1px 2px lightgreen ;
+}*/
