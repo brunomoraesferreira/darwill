@@ -41,8 +41,7 @@ body
 }
 #rodape {
   height:10%;
-  min-height: 4rem;
-  max-height: 4rem;
+
   padding: 0.4rem 0;
   background-color: DodgerBlue;
 }
