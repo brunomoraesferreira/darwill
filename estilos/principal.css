@@ -29,8 +29,7 @@ body
 }
 #cabecalho {
   height:10%;
-  min-height: 4rem;
-  max-height: 4rem;
+
   padding: 0.2rem;
   display:flex;
   flex-direction: column;
@@ -40,7 +39,7 @@ body
   background-color: DodgerBlue;
 }
 #rodape {
-  height:20%;
+  height:10%;
 
   padding: 0.4rem 0;
   background-color: DodgerBlue;
