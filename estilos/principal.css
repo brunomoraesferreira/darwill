@@ -78,6 +78,7 @@ h1 {
   width:100%;
   height:100%;
   display: flex;
+  padding: 0 0.3rem;
 }
 .menu button {
   flex-grow: 1;
