@@ -82,7 +82,7 @@ h1 {
 .menu button {
   flex-grow: 1;
   height:100%;
-  margin: 0 0.2rem;
+  margin: 0 0.3rem;
   background-color: rgba(125, 200, 255, 0.2);
   border: 0.1rem outset DodgerBlue;
   color: white;
