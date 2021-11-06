@@ -99,16 +99,7 @@ button:active {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem inset DodgerBlue;
   /*border-bottom: 0.1rem inset green;*/
-}/*
+}
 button img {
-  padding: 0.3rem;
-  border-radius: 50% 0;
-  box-shadow: 1px 1px 2px blue, -1px -1px 2px ;
+  width: 30%;
 }
-
-button:hover img {
-  box-shadow: 1px 1px 2px lightgreen, -1px -1px 2px lightpink;
-}
-button:active img {
-  box-shadow: 1px 1px 2px lightpink, -1px -1px 2px lightgreen ;
-}*/
