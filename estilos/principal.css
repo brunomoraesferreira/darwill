@@ -106,8 +106,25 @@ button {
 button .imagem {
   width: 50%;
   height: 50%;
-  background-image: url(../imagens/cardapio.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+button:nth-child(1) .imagem {
+background-image: url(../imagens/rocket.png);
+}
+button:nth-child(2) .imagem {
+  background-image: url(../imagens/portfolio.png);
+}
+button:nth-child(3) .imagem {
+  background-image: url(../imagens/hat.png);
+}
+button:nth-child(4) .imagem {
+  background-image: url(../imagens/cardapio.png);
+}
+button:nth-child(5) .imagem {
+  background-image: url(../imagens/sobre.png);
+}
+button:nth-child(6) .imagem {
+  background-image: url(../imagens/contact.png);
 }
