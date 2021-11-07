@@ -98,8 +98,10 @@ button:active {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem inset DodgerBlue;
 }
-button img {
-  display: none;
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button .imagem {
   width: 50%;
