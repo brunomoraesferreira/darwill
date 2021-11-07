@@ -103,28 +103,28 @@ button {
   justify-content: center;
   align-items: center;
 }
-button .imagem {
+button div {
   width: 50%;
   height: 50%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-button:nth-child(1) .imagem {
-background-image: url(../imagens/rocket.png);
+button:nth-child(1) div {
+  background-image: url(../imagens/rocket.png);
 }
-button:nth-child(2) .imagem {
+button:nth-child(2) div {
   background-image: url(../imagens/portfolio.png);
 }
-button:nth-child(3) .imagem {
+button:nth-child(3) div {
   background-image: url(../imagens/hat.png);
 }
-button:nth-child(4) .imagem {
+button:nth-child(4) div {
   background-image: url(../imagens/cardapio.png);
 }
-button:nth-child(5) .imagem {
+button:nth-child(5) div {
   background-image: url(../imagens/sobre.png);
 }
-button:nth-child(6) .imagem {
+button:nth-child(6) div {
   background-image: url(../imagens/contact.png);
 }
