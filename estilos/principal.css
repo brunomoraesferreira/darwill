@@ -45,7 +45,7 @@ body
   background-color: DodgerBlue;
 }
 #principal{
-  flex-grow: 1;
+  height: 80%;
   padding: 0.5rem;
 }
 h1 {
@@ -78,7 +78,6 @@ h1 {
   width:100%;
   height:100%;
   display: flex;
-  padding: 0 0.3rem;
 }
 .menu button {
   flex-grow: 1;
@@ -94,13 +93,16 @@ h1 {
 button:hover {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem outset DodgerBlue;
-  /*border-bottom: 0.1rem outset red;*/
 }
 button:active {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem inset DodgerBlue;
-  /*border-bottom: 0.1rem inset green;*/
 }
 button img {
-  width: 50%;
+  display: none;
+}
+button {
+  background-image: url(../imagens/cardapio.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
