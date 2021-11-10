@@ -28,7 +28,7 @@ body
   overflow:hidden;
 }
 #cabecalho {
-  height:7.5%;
+  height:10%;
 
   padding: 0.2rem;
   display:flex;
@@ -40,13 +40,13 @@ body
   box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 #rodape {
-  height:7.5%;
+  height:10%;
   padding: 0.4rem 0;
   background-color: #0048C7;
   box-shadow: 0 -0.2rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 #principal{
-  height: 85%;
+  height: 80%;
   padding: 0.5rem;
 }
 h1 {
