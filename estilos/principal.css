@@ -28,7 +28,7 @@ body
   overflow:hidden;
 }
 #cabecalho {
-  height:10%;
+  height:7.5%;
 
   padding: 0.2rem;
   display:flex;
@@ -37,16 +37,16 @@ body
   align-items: center;
   color: white;
   background-color: #0048C7;
-  box-shadow: 0rem 0.2rem 0.4rem black;
+  box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 #rodape {
-  height:10%;
+  height:7.5%;
   padding: 0.4rem 0;
   background-color: #0048C7;
-  box-shadow: 0rem -0.2rem 0.4rem rgba(0, 0, 0, 1), 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 -0.2rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 #principal{
-  height: 80%;
+  height: 85%;
   padding: 0.5rem;
 }
 h1 {
@@ -60,24 +60,17 @@ h1 {
   height:40%;
   display:flex;
   align-items: center;
-  border-bottom: 1px solid white;
 }
 .conteudo_capa {
   display:flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  
 }
-.provisorio {
-  width: 100%;
-  background-color: pink;
-  height: 70%;
-}
+
 .letreiro {
-  width: 100%;
-  background: red;
-  background: linear-gradient(90 deg, rgba 0,10,36,0) 0%, rgb(241, 4, 4) 100%)
-  height: 30%;
+
 }
 
 .portfolio {
@@ -104,43 +97,43 @@ h1 {
   font-size: 0.7rem;
   box-shadow: 1px 1px 1px #0048C7;
 }
-button:hover {
+.menu button:hover {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem outset #0048C7;
 }
-button:active {
+.menu button:active {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem inset #0048C7;
   
 }
-button {
+.menu button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-button div {
+.menu button div {
   width: 50%;
   height: 50%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-button:nth-child(1) div {
+.menu button:nth-child(1) div {
   background-image: url(../imagens/rocket.png);
 }
-button:nth-child(2) div {
+.menu button:nth-child(2) div {
   background-image: url(../imagens/portfolio.png);
 }
-button:nth-child(3) div {
+.menu button:nth-child(3) div {
   background-image: url(../imagens/hat.png);
 }
-button:nth-child(4) div {
+.menu button:nth-child(4) div {
   background-image: url(../imagens/cardapio.png);
 }
-button:nth-child(5) div {
+.menu button:nth-child(5) div {
   background-image: url(../imagens/sobre.png);
 }
-button:nth-child(6) div {
+.menu button:nth-child(6) div {
   background-image: url(../imagens/contact.png);
 }
 
