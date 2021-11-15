@@ -126,22 +126,10 @@ h1 {
   background-position: center;
   background-size: contain;
 }
-.menu button:nth-child(1) div {
-  background-image: url(../imagens/rocket.png);
-}
-.menu button:nth-child(2) div {
-  background-image: url(../imagens/portfolio.png);
-}
-.menu button:nth-child(3) div {
-  background-image: url(../imagens/hat.png);
-}
-.menu button:nth-child(4) div {
-  background-image: url(../imagens/cardapio.png);
-}
-.menu button:nth-child(5) div {
-  background-image: url(../imagens/sobre.png);
-}
-.menu button:nth-child(6) div {
-  background-image: url(../imagens/contact.png);
-}
+.menu button:nth-child(1) div {background-image: url(../imagens/rocket.png);}
+.menu button:nth-child(2) div {background-image: url(../imagens/portfolio.png);}
+.menu button:nth-child(3) div {background-image: url(../imagens/hat.png);}
+.menu button:nth-child(4) div {background-image: url(../imagens/cardapio.png);}
+.menu button:nth-child(5) div {background-image: url(../imagens/sobre.png);}
+.menu button:nth-child(6) div {background-image: url(../imagens/contact.png);}
 
