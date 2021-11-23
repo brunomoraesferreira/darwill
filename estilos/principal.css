@@ -6,10 +6,11 @@
   font-family:NeoRegular;
   src:url(../fontes/NeoRegular.otf)
 }
-
+	
 html {
   width:100%;
   height:100%;
+  
   font-size:16px;
 }
 
@@ -20,37 +21,48 @@ body
 
 }
 .conteiner {
+  /*xxxxx*/
   width:100%;
   height:100%;
   position: fixed;
+  
   display: flex;
   flex-direction: column;
   overflow:hidden;
 }
 #cabecalho {
-  height:7%;
-
-  padding: 0.2rem;
+  /*dimensão*/
+  flex-basis: 7%;
+  min-height: 1rem;
+  /*apresentação*/
+  color: white;
+  background-color: #0048C7;
+  box-shadow: 0rem 0.2rem 10rem rgba(0, 0, 255, 0.2), 0rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.5);
+  /*organização*/
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #0048C7;
-  box-shadow: 0rem 0.2rem 10rem rgba(0, 0, 255, 0.2), 0rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 #rodape {
-  height:8%;
-  padding: 0.4rem 0;
+  /*dimensão*/
+  flex-basis: 8%;
+  min-height: 1rem;
+  /*apresentação*/
   background-color: #0048C7;
   border-top: 1px solid rgba(30, 143, 255, 0.5);
   box-shadow: inset 0rem -0.2rem 1rem #0048C7;
   box-shadow: 0rem 0.2rem 10rem rgba(0, 0, 255, 0.2), 0rem 0.2rem 1rem 0.4rem rgba(0, 0, 0, 0.2);
-
+  /*organização*/
+  display:flex;
+  flex-direction: row;
 }
 #principal{
-  height: 85%;
-  /*padding: 0.5rem;*/
+  /*dimensão*/
+  flex-grow: 1;
+  /*organização*/
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   font-size:2rem;
@@ -59,8 +71,12 @@ h1 {
   background-color: #0048C7;
   text-shadow: 1px 1px 2px black; 
 }
+@media only screen and (max-height: 620px){h1 {font-size: 1.5rem;color:green;}}
+@media only screen and (max-height: 520px){h1 {font-size: 1rem;color:red;}}
+@media only screen and (max-height: 420px){h1 {font-size: 0.7rem;color:orange;}}
 .capa {
-  height:40%;
+  /*height:40%;*/
+  flex-basis: 40%;
   display:flex;
   align-items: center;
   background-image: url(../imagens/provisorio.jpeg);
@@ -68,6 +84,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   filter: opacity(0.1) contrast(2) saturate(1) brightness(1);
+  display: none;
 }
 .conteudo_capa {
   display:flex;
@@ -76,27 +93,32 @@ h1 {
   height: 100%;
   
 }
-
 .letreiro {
 
 }
-
 .portfolio {
-  height:60%;
+  /*height:60%;*/
+  flex-grow: 1;
   display:flex;
   align-items: center;
   justify-content: center;
-  
+  display: none;
 }
 .menu {
+  /*dimensão*/
   width:100%;
   height:100%;
+  /*padding: 0.3rem 0;*/
+
+  /*organização*/
   display: flex;
 }
 .menu button {
+  /*dimensão*/
   flex-grow: 1;
+  /*apresenação*/
   height:100%;
-  margin: 0 0.3rem;
+  /*margin: 0 0.3rem;*/
   background-color: rgba(125, 200, 255, 0.2);
   border: 0.1rem outset #0048C7;
   color: white;
@@ -104,7 +126,13 @@ h1 {
   letter-spacing: 0.1rem;
   font-size: 0.7rem;
   box-shadow: 1px 1px 1px #0048C7;
+  /*organização*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 .menu button:hover {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem outset #0048C7;
@@ -113,11 +141,6 @@ h1 {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem inset #0048C7;
   
-}
-.menu button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .menu button div {
   width: 50%;
@@ -132,4 +155,3 @@ h1 {
 .menu button:nth-child(4) div {background-image: url(../imagens/cardapio.png);}
 .menu button:nth-child(5) div {background-image: url(../imagens/sobre.png);}
 .menu button:nth-child(6) div {background-image: url(../imagens/contact.png);}
-
