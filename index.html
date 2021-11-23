@@ -16,32 +16,35 @@
 	  <!--início principal-->
 	  <main id="principal">
 		<section class="capa">
-		  <div class="conteudo_capa">
-
-		  </div>
+		  <div class="conteudo_capa"></div>
 		</section>
 		<section class="portfolio">
 		  <div class="conteudo_portfolio">
-
+			<div id="trabalhos" class="conteudoPortfolio tabcontent"></div>
+			<div id="projetos" class="conteudoPortfolio"></div>
+			<div id="habilidades" class="conteudoPortfolio"></div>
+			<div id="servicos" class="conteudoPortfolio"></div>
+			<div id="sobre" class="conteudoPortfolio"></div>
+			<div id="contato" class="conteudoPortfolio"></div>
 		  </div>
 		</section>
 	  </main>
       <!--fim principal-->
 	  <footer id="rodape">
 		<nav class="menu">
-		  <button>
-			  <div class="imagem"></div>
-		  </button><!--conteudo_portfolio-->
-	      <button><div class="imagem"></div></button><!--trabalhos-->
-	      <button><div class="imagem"></div></button><!--habilidades-->
-		  <button><div class="imagem"></div></button><!--servicos-->
-		  <button><div class="imagem"></div></button><!--sobre-->
-		  <button><div class="imagem"></div></button><!--contato-->
+		  <button class="botaoMenuPortfolio tablinks" onclick="abreMenuPortfolio(evento, trabalhos)"><div></div></button><!--trabalhos-->
+	      <button class="botaoMenuPortfolio" onclick="abreMenuPortfolio(evento, projetos)"><div></div></button><!--projetos-->
+	      <button class="botaoMenuPortfolio" onclick="abreMenuPortfolio(evento, habilidades)"><div></div></button><!--habilidades-->
+		  <button class="botaoMenuPortfolio" onclick="abreMenuPortfolio(evento, servicos)"><div></div></button><!--servicos-->
+		  <button class="botaoMenuPortfolio" onclick="abreMenuPortfolio(evento, sobre)"><div></div></button><!--sobre-->
+		  <button class="botaoMenuPortfolio" onclick="abreMenuPortfolio(evento, contato)"><div></div></button><!--contato-->
 		</nav>
 	  </footer>
 	  
 	</div>
-	
+
+	<script src="js/abas-secao-servicos.js"></script>
+	<script src="js/menu.js"></script>
 
   </body>
 </html>
