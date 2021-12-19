@@ -126,7 +126,7 @@ body
   background-size: 14vh;
   animation: parallax_bike linear 20s infinite both;
   background-repeat: no-repeat;
-  /*bottom: 3vh;*/
+  bottom: 3vh;
 }
 @keyframes parallax_fgA {
   0% {
