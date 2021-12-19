@@ -126,17 +126,17 @@ body
 }
 .capa div div:nth-child(5)  {
   background-image: url(../imagens/parallax/bike.png);
-  background-size: 15vh;
+  background-size: 14vh;
   animation: parallax_bike linear 20s infinite both;
   background-repeat: no-repeat;
-  bottom: 4vh;
+  bottom: 3vh;
 }
 @keyframes parallax_fg {
   0% {
     background-position: 4630px 100%;
  }
   100% {
-    background-position: 550px 100%;
+    background-position: -4630px 100%;
  }
 }
 @keyframes parallax_bike {
