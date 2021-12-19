@@ -96,7 +96,10 @@ body
   width: 100%;
   height: 100%;
   background-repeat: repeat-x;
+
   position: absolute;
+  background-size: 300vh;
+  bottom: 0;
   
 }
 .capa div div:nth-child(1)  {
@@ -118,27 +121,29 @@ body
 .capa div div:nth-child(6)  {
   background-image: url(../imagens/parallax/camada_A_-_parque.png);
   animation: parallax_fg linear 30s infinite both;
+  
+
 }
 .capa div div:nth-child(5)  {
   background-image: url(../imagens/parallax/bike.png);
-  background-size: 18%;
+  background-size: 10vh;
   animation: parallax_bike linear 20s infinite both;
   background-repeat: no-repeat;
-  bottom: 10%;
+  bottom: 4vh;
 }
 @keyframes parallax_fg {
   0% {
     background-position: 4630px 100%;
  }
   100% {
-    background-position: -4630px 100%;
+    background-position: 550px 100%;
  }
 }
 @keyframes parallax_bike {
   0% {
-    background-position: -150px 100%;
+    background-position: -300px 100%;
  }
   100% {
-    background-position: 4630px 100%;
+    background-position: 2000px 100%;
  }
 }
