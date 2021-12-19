@@ -103,23 +103,23 @@ body
 }
 .capa div div:nth-child(1)  {
   background-image: url(../imagens/parallax/camada_E_-_cerrado.png);
-  animation: parallax_fgA linear 70s infinite both;
+  animation: parallax_fgA linear 80s infinite both;
 }
 .capa div div:nth-child(2)  {
   background-image: url(../imagens/parallax/camada_D_-_ponte.png);
-  animation: parallax_fgB linear 60s infinite both;
+  animation: parallax_fgB linear 70s infinite both;
 }
 .capa div div:nth-child(3)  {
   background-image: url(../imagens/parallax/camada_C_-_Congresso.png);
-  animation: parallax_fgC linear 50s infinite both;
+  animation: parallax_fgC linear 60s infinite both;
 }
 .capa div div:nth-child(4)  {
   background-image: url(../imagens/parallax/camada_B_-_catedral.png);
-  animation: parallax_fgD linear 40s infinite both;
+  animation: parallax_fgD linear 50s infinite both;
 }
 .capa div div:nth-child(6)  {
   background-image: url(../imagens/parallax/camada_A_-_parque.png);
-  animation: parallax_fgE linear 30s infinite both;
+  animation: parallax_fgE linear 40s infinite both;
 }
 .capa div div:nth-child(5)  {
   background-image: url(../imagens/parallax/bike.png);
