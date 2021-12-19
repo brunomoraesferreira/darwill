@@ -126,7 +126,7 @@ body
 }
 .capa div div:nth-child(5)  {
   background-image: url(../imagens/parallax/bike.png);
-  background-size: 10vh;
+  background-size: 15vh;
   animation: parallax_bike linear 20s infinite both;
   background-repeat: no-repeat;
   bottom: 4vh;
