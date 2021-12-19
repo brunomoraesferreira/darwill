@@ -101,7 +101,9 @@ body
 }
 .capa div div:nth-child(1)  {
   background-image: url(../imagens/parallax/camada_E_-_cerrado.png);
-  animation: parallax_fg linear 70s infinite both;
+  animation: parallax_fg linear 70
+  
+  s infinite both;
 }
 .capa div div:nth-child(2)  {
   background-image: url(../imagens/parallax/camada_D_-_ponte.png);
@@ -128,10 +130,10 @@ body
 }
 @keyframes parallax_fg {
   0% {
-    background-position: 0 100%;
+    background-position: 4630px 100%;
  }
   100% {
-    background-position: 50% 100%;
+    background-position: -4630px 100%;
  }
 }
 @keyframes parallax_bike {
