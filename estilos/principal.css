@@ -103,53 +103,53 @@ body
 }
 .capa div div:nth-child(1)  {
   background-image: url(../imagens/parallax/camada_E_-_cerrado.png);
-  animation: parallax_fgA linear 80s infinite both;
+  animation: parallax_fgE linear 260s infinite both;
 }
 .capa div div:nth-child(2)  {
   background-image: url(../imagens/parallax/camada_D_-_ponte.png);
-  animation: parallax_fgB linear 70s infinite both;
+  animation: parallax_fgD linear 240s infinite both;
 }
 .capa div div:nth-child(3)  {
   background-image: url(../imagens/parallax/camada_C_-_Congresso.png);
-  animation: parallax_fgC linear 60s infinite both;
+  animation: parallax_fgC linear 220s infinite both;
 }
 .capa div div:nth-child(4)  {
   background-image: url(../imagens/parallax/camada_B_-_catedral.png);
-  animation: parallax_fgD linear 50s infinite both;
+  animation: parallax_fgB linear 200s infinite both;
 }
 .capa div div:nth-child(6)  {
   background-image: url(../imagens/parallax/camada_A_-_parque.png);
-  animation: parallax_fgE linear 40s infinite both;
+  animation: parallax_fgA linear 180s infinite both;
 }
 .capa div div:nth-child(5)  {
   background-image: url(../imagens/parallax/bike.png);
   background-size: 14vh;
-  animation: parallax_bike linear 20s infinite both;
+  animation: parallax_bike linear 25s infinite both;
   background-repeat: no-repeat;
   bottom: 3vh;
 }
 @keyframes parallax_fgA {
   0% {
-    background-position:  -54% 100%;
+    background-position:  -150% 100%;
  }
   100% {
-    background-position: 100% 100%;
+    background-position: 1000% 100%;
  }
 }
 @keyframes parallax_fgB {
   0% {
-    background-position:  -54% 100%;
+    background-position:  -50% 100%;
  }
   100% {
-    background-position: 100% 100%;
+    background-position: 1000% 100%;
  }
 }
 @keyframes parallax_fgC {
   0% {
-    background-position:  -54% 100%;
+    background-position:  -100% 100%;
  }
   100% {
-    background-position: 100% 100%;
+    background-position: 1000% 100%;
  }
 }
 @keyframes parallax_fgD {
@@ -157,7 +157,7 @@ body
     background-position:  -54% 100%;
  }
   100% {
-    background-position: 100% 100%;
+    background-position: 1000% 100%;
  }
 }
 @keyframes parallax_fgE {
@@ -165,7 +165,7 @@ body
     background-position:  -54% 100%;
  }
   100% {
-    background-position: 100% 100%;
+    background-position: 1000% 100%;
  }
 }
 @keyframes parallax_bike {
