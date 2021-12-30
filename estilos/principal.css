@@ -20,9 +20,33 @@ body
 
 .capa {
   flex: 1 1 40%;
-  background-color: plum;
+  border-bottom: 1px solid black;
 }
 
 .conteudo {
   flex: 1 1 60%;
+  flex-direction: column;
+}
+
+main {
+  background-color: lightgreen;
+  height: 85%;
+  display: flex;
+  position: relative;
+}
+nav {
+  background-color: lightsalmon;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+
+main section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+}
+nav button {
+  flex: 1 1 20%;
 }
