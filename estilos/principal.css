@@ -23,30 +23,72 @@ body
   border-bottom: 1px solid black;
 }
 
-.conteudo {
+.conteudo{
   flex: 1 1 60%;
+  display:flex;
   flex-direction: column;
 }
-
-main {
-  background-color: lightgreen;
-  height: 85%;
-  display: flex;
+.painels{
+  background: white;
   position: relative;
+  height: 85%;
 }
-nav {
-  background-color: lightsalmon;
+.guias {
   height: 15%;
   display: flex;
   flex-direction: row;
 }
-
-main section {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: white;
+.radio{
+  display:none;
 }
-nav button {
+.guia{
   flex: 1 1 20%;
+  cursor: pointer;
+  background-color: wheat;
 }
+.painel{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  animation: fadein .8s;
+  background-color: red;
+  
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.titulo-do-painel{
+  font-size:1.5em;
+  flex: 1 1 10%;
+
+}
+.corpo-do-painel {
+  background-color: green;
+  flex: 1 1 90%;
+}
+
+#botao-um:checked ~ .painels #um-painel,
+#botao-dois:checked ~ .painels #dois-painel,
+#botao-tres:checked ~ .painels #tres-painel,
+#botao-quatro:checked ~ .painels #quatro-painel,
+#botao-cinco:checked ~ .painels #cinco-painel,
+#botao-seis:checked ~ .painels #seis-painel{
+  z-index: 5;
+}
+#botao-um:checked ~ .guias #guia-um,
+#botao-dois:checked ~ .guias #guia-dois,
+#botao-tres:checked ~ .guias #guia-tres,
+#botao-quatro:checked ~ .guias #guia-quatro,
+#botao-cinco:checked ~ .guias #guia-cinco,
+#botao-seis:checked ~ .guias #guia-seis{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid red;
+}
+
