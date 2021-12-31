@@ -16,6 +16,7 @@ body
   display: flex;
   flex-direction: column;
   overflow:hidden;
+  color: white;
 }
 
 .capa {
@@ -29,12 +30,11 @@ body
   flex-direction: column;
 }
 .painels{
-  background: white;
   position: relative;
-  height: 85%;
+  flex: 1 1 85%;
 }
 .guias {
-  height: 15%;
+  flex: 1 1 15%;
   display: flex;
   flex-direction: row;
 }
@@ -42,18 +42,23 @@ body
   display:none;
 }
 .guia{
-  flex: 1 1 20%;
+  flex: 1 1;
   cursor: pointer;
-  background-color: wheat;
+  border: 0.1rem outset #0048C7;
+  border-top: 3px solid dodgerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .painel{
   height: 100%;
+  background-color: #0048C7;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   position: absolute;
-  animation: fadein .8s;
-  background-color: red;
-  
+  animation: fadein .8s;  
 }
 @keyframes fadein {
     from {
@@ -64,13 +69,14 @@ body
     }
 }
 .titulo-do-painel{
-  font-size:1.5em;
+  font-size:1.5rem;
   flex: 1 1 10%;
-
+  display: flex;
+  align-items: center;
 }
 .corpo-do-painel {
-  background-color: green;
   flex: 1 1 90%;
+
 }
 
 #botao-um:checked ~ .painels #um-painel,
@@ -79,7 +85,7 @@ body
 #botao-quatro:checked ~ .painels #quatro-painel,
 #botao-cinco:checked ~ .painels #cinco-painel,
 #botao-seis:checked ~ .painels #seis-painel{
-  z-index: 5;
+  z-index: 2;
 }
 #botao-um:checked ~ .guias #guia-um,
 #botao-dois:checked ~ .guias #guia-dois,
@@ -87,8 +93,34 @@ body
 #botao-quatro:checked ~ .guias #guia-quatro,
 #botao-cinco:checked ~ .guias #guia-cinco,
 #botao-seis:checked ~ .guias #guia-seis{
-  background:#fffffff6;
+  /*background:#fffffff6;
   color:#000;
-  border-top: 3px solid red;
+  border-top: 3px solid green;*/
 }
+
+.guia:hover {
+  background-color: rgba(150, 125, 255, 0.2);
+  border: 0.1rem outset #0048C7;
+  border-top: 3px solid green;
+}
+.guia:active {
+  background-color: rgba(150, 125, 255, 0.2);
+  border: 0.1rem inset #0048C7;
+  border-top: 3px solid skyblue;
+
+}
+
+.guia div {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 50%;
+}
+
+.guia:nth-child(1) div {background-image: url(../imagens/rocket.png);}
+.guia:nth-child(2) div {background-image: url(../imagens/hat.png);}
+.guia:nth-child(3) div {background-image: url(../imagens/portfolio.png);}
+.guia:nth-child(4) div {background-image: url(../imagens/cardapio.png);}
+.guia:nth-child(5) div {background-image: url(../imagens/sobre.png);}
+.guia:nth-child(6) div {background-image: url(../imagens/contact.png);}
 
