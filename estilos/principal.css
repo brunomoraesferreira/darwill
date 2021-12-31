@@ -93,11 +93,30 @@ body
 #botao-quatro:checked ~ .guias #guia-quatro,
 #botao-cinco:checked ~ .guias #guia-cinco,
 #botao-seis:checked ~ .guias #guia-seis{
-  /*background:#fffffff6;
-  color:#000;
-  border-top: 3px solid green;*/
+  background-color: rgba(150, 125, 255, 0.2);
+  border: 0.1rem inset #0048C7;
+  border-top: 3px solid skyblue;
 }
-
+#botao-um:checked ~ .guias #guia-um:hover,
+#botao-dois:checked ~ .guias #guia-dois:hover,
+#botao-tres:checked ~ .guias #guia-tres:hover,
+#botao-quatro:checked ~ .guias #guia-quatro:hover,
+#botao-cinco:checked ~ .guias #guia-cinco:hover,
+#botao-seis:checked ~ .guias #guia-seis:hover {
+  background-color: rgba(150, 125, 255, 0.2);
+  border: 0.1rem outset #0048C7;
+  border-top: 3px solid green;
+}
+#botao-um:checked ~ .guias #guia-um:active,
+#botao-dois:checked ~ .guias #guia-dois:active,
+#botao-tres:checked ~ .guias #guia-tres:active,
+#botao-quatro:checked ~ .guias #guia-quatro:active,
+#botao-cinco:checked ~ .guias #guia-cinco:active,
+#botao-seis:checked ~ .guias #guia-seis:active {
+  background-color: rgba(150, 125, 255, 0.2);
+  border: 0.1rem inset #0048C7;
+  border-top: 3px solid skyblue;
+}
 .guia:hover {
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem outset #0048C7;
@@ -107,7 +126,6 @@ body
   background-color: rgba(150, 125, 255, 0.2);
   border: 0.1rem inset #0048C7;
   border-top: 3px solid skyblue;
-
 }
 
 .guia div {
@@ -123,4 +141,6 @@ body
 .guia:nth-child(4) div {background-image: url(../imagens/cardapio.png);}
 .guia:nth-child(5) div {background-image: url(../imagens/sobre.png);}
 .guia:nth-child(6) div {background-image: url(../imagens/contact.png);}
+
+
 
