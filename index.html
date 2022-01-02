@@ -14,13 +14,13 @@
 				  <div class="titulo-do-painel">Praticas</div>
 				  <div class="corpo-do-painel">
 					<div class="carrossel">
-						<ul class="gallery">
-							<li style="background: red;"></li>
-							<li style="background: blue;"></li>
-							<li style="background: green;"></li>
-							<li style="background: orange;"></li>
-							<li style="background: magenta;"></li>
-						</ul>
+						<div class="gallery">
+							<div style="background: red;"></div>
+							<div style="background: blue;"></div>
+							<div style="background: green;"></div>
+							<div style="background: orange;"></div>
+							<div style="background: magenta;"></div>
+						</div>
 					</div>
 				  </div>
 				</section>
@@ -71,15 +71,13 @@
 		document.getElementById(cityName).style.display = "block";
   		evt.currentTarget.className += " painel-ativo";
 }
-		/*document.getElementById("defaultOpen").onmouseover();*/
 		document.getElementById("defaultOpen").click();
-		</script>
-		<script>
+	</script>
+	<script>
 		const slider = document.querySelector('.gallery');
 		let isDown = false;
 		let startX;
 		let scrollLeft;
-
 		slider.addEventListener('mousedown', e => {
 		isDown = true;
 		slider.classList.add('painel-ativo');
@@ -102,11 +100,6 @@
 		const walk = (x - startX) * SCROLL_SPEED;
 		slider.scrollLeft = scrollLeft - walk;
 		});
-
-
-		
 	</script>
-
-
   </body>
 </html>
