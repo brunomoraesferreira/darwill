@@ -64,20 +64,18 @@ body
   flex: 1;
   outline: none;
   cursor: pointer;
-
+  border: 0.1rem outset /*#0048C7*/;
 }
 
 /* Change background color of buttons on hover */
 .menu button:hover {
   background-color: #ddd;
+  border: 0.1rem outset /*#0048C7*/;
 }
 
 /* Create an active/current menulink class */
 .menu button.active {
-  background-color: #ccc;
+  background-color: #ccc;  
+  border: 0.1rem inset /*#0048C7*/;
 }
 
-/* Style the menu content */
-.tabcontent {
-  display: none;
-}
