@@ -12,7 +12,17 @@
 			<main class="paineis">
 				<section id="praticas" class="tabcontent painel">
 				  <div class="titulo-do-painel">Praticas</div>
-				  <div class="corpo-do-painel">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+				  <div class="corpo-do-painel">
+					<div class="carrossel">
+						<ul class="gallery">
+							<li style="background: red;"></li>
+							<li style="background: blue;"></li>
+							<li style="background: green;"></li>
+							<li style="background: orange;"></li>
+							<li style="background: magenta;"></li>
+						</ul>
+					</div>
+				  </div>
 				</section>
 				<section id="habilidades" class="tabcontent painel">
 					<div class="titulo-do-painel">Habilidades</div>
@@ -37,19 +47,12 @@
 				</main>
 				<nav class="tab menu">
 				  
-				  <button class="tablinks" onmouseover="openCity(event, 'praticas')"  id="defaultOpen">Praticas</button>
+				  <button class="tablinks" onclick="openCity(event, 'praticas')" onmouseover="openCity(event, 'praticas')"  id="defaultOpen">Praticas</button>
 				  <button class="tablinks" onmouseover="openCity(event, 'habilidades')">Habilidades</button>
 				  <button class="tablinks" onmouseover="openCity(event, 'trabalhos')">Trabalhos</button>
 				  <button class="tablinks" onmouseover="openCity(event, 'serviços')">Serviços</button>
 				  <button class="tablinks" onmouseover="openCity(event, 'sobre')">Sobre</button>
 				  <button class="tablinks" onmouseover="openCity(event, 'contato')">Contato</button>
-				  
-			  <!--<button class="tablinks" onclick="openCity(event, 'praticas')"  id="defaultOpen">Praticas</button>
-				  <button class="tablinks" onclick="openCity(event, 'habilidades')">Habilidades</button>
-				  <button class="tablinks" onclick="openCity(event, 'trabalhos')">Trabalhos</button>
-				  <button class="tablinks" onclick="openCity(event, 'serviços')">Serviços</button>
-				  <button class="tablinks" onclick="openCity(event, 'sobre')">Sobre</button>
-				  <button class="tablinks" onclick="openCity(event, 'contato')">Contato</button>-->
 				</nav>
 		</section>
 	</section>
@@ -63,13 +66,45 @@
 		}
 		tablinks = document.getElementsByClassName("tablinks");
 		for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
+		tablinks[i].className = tablinks[i].className.replace(" painel-ativo", "");
 		}
 		document.getElementById(cityName).style.display = "block";
-  		evt.currentTarget.className += " active";
+  		evt.currentTarget.className += " painel-ativo";
 }
-		document.getElementById("defaultOpen").mouseover();
-		/*document.getElementById("defaultOpen").click();*/
+		/*document.getElementById("defaultOpen").onmouseover();*/
+		document.getElementById("defaultOpen").click();
+		</script>
+		<script>
+		const slider = document.querySelector('.gallery');
+		let isDown = false;
+		let startX;
+		let scrollLeft;
+
+		slider.addEventListener('mousedown', e => {
+		isDown = true;
+		slider.classList.add('painel-ativo');
+		startX = e.pageX - slider.offsetLeft;
+		scrollLeft = slider.scrollLeft;
+		});
+		slider.addEventListener('mouseleave', _ => {
+		isDown = false;
+		slider.classList.remove('painel-ativo');
+		});
+		slider.addEventListener('mouseup', _ => {
+		isDown = false;
+		slider.classList.remove('painel-ativo');
+		});
+		slider.addEventListener('mousemove', e => {
+		if (!isDown) return;
+		e.preventDefault();
+		const x = e.pageX - slider.offsetLeft;
+		const SCROLL_SPEED = 3;
+		const walk = (x - startX) * SCROLL_SPEED;
+		slider.scrollLeft = scrollLeft - walk;
+		});
+
+
+		
 	</script>
 
 
