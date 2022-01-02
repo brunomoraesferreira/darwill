@@ -18,129 +18,66 @@ body
   overflow:hidden;
   color: white;
 }
-
 .capa {
-  flex: 1 1 40%;
+  height: 40%;
   border-bottom: 1px solid black;
 }
 
 .conteudo{
-  flex: 1 1 60%;
+  height: 60%;
   display:flex;
   flex-direction: column;
+  background-color: red;
 }
-.painels{
+.paineis{
   position: relative;
-  flex: 1 1 85%;
-}
-.guias {
-  flex: 1 1 15%;
-  display: flex;
-  flex-direction: row;
-}
-.radio{
-  display:none;
-}
-.guia{
-  flex: 1 1;
-  cursor: pointer;
-  border: 0.1rem outset #0048C7;
-  border-top: 3px solid dodgerblue;
+  height: 85%;
+
+  background-color: purple;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-.painel{
-  height: 100%;
-  background-color: #0048C7;
-  z-index: 1;
+.menu {
+  height: 15%;
+  background-color: blueviolet;
   display: flex;
-  flex-direction: column;
+}
+
+.painel {
   position: absolute;
-  animation: fadein .8s;  
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  width: 100%;
+  height: 100%;
+  background-color: orange;
 }
 .titulo-do-painel{
-  font-size:1.5rem;
-  flex: 1 1 10%;
-  display: flex;
-  align-items: center;
+  background-color: yellow;
+  height: 10%;
 }
 .corpo-do-painel {
-  flex: 1 1 90%;
+  background-color: yellowgreen;
+  height: 90%;
 
 }
 
-#botao-um:checked ~ .painels #um-painel,
-#botao-dois:checked ~ .painels #dois-painel,
-#botao-tres:checked ~ .painels #tres-painel,
-#botao-quatro:checked ~ .painels #quatro-painel,
-#botao-cinco:checked ~ .painels #cinco-painel,
-#botao-seis:checked ~ .painels #seis-painel{
-  z-index: 2;
-}
-#botao-um:checked ~ .guias #guia-um,
-#botao-dois:checked ~ .guias #guia-dois,
-#botao-tres:checked ~ .guias #guia-tres,
-#botao-quatro:checked ~ .guias #guia-quatro,
-#botao-cinco:checked ~ .guias #guia-cinco,
-#botao-seis:checked ~ .guias #guia-seis{
-  background-color: rgba(150, 125, 255, 0.2);
-  border: 0.1rem inset #0048C7;
-  border-top: 3px solid skyblue;
-}
-#botao-um:checked ~ .guias #guia-um:hover,
-#botao-dois:checked ~ .guias #guia-dois:hover,
-#botao-tres:checked ~ .guias #guia-tres:hover,
-#botao-quatro:checked ~ .guias #guia-quatro:hover,
-#botao-cinco:checked ~ .guias #guia-cinco:hover,
-#botao-seis:checked ~ .guias #guia-seis:hover {
-  background-color: rgba(150, 125, 255, 0.2);
-  border: 0.1rem outset #0048C7;
-  border-top: 3px solid green;
-}
-#botao-um:checked ~ .guias #guia-um:active,
-#botao-dois:checked ~ .guias #guia-dois:active,
-#botao-tres:checked ~ .guias #guia-tres:active,
-#botao-quatro:checked ~ .guias #guia-quatro:active,
-#botao-cinco:checked ~ .guias #guia-cinco:active,
-#botao-seis:checked ~ .guias #guia-seis:active {
-  background-color: rgba(150, 125, 255, 0.2);
-  border: 0.1rem inset #0048C7;
-  border-top: 3px solid skyblue;
-}
-.guia:hover {
-  background-color: rgba(150, 125, 255, 0.2);
-  border: 0.1rem outset #0048C7;
-  border-top: 3px solid green;
-}
-.guia:active {
-  background-color: rgba(150, 125, 255, 0.2);
-  border: 0.1rem inset #0048C7;
-  border-top: 3px solid skyblue;
+/* Style the buttons inside the menu */
+.menu button {
+  flex: 1;
+  outline: none;
+  cursor: pointer;
+
 }
 
-.guia div {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50%;
-  height: 50%;
+/* Change background color of buttons on hover */
+.menu button:hover {
+  background-color: #ddd;
 }
 
-.guia:nth-child(1) div {background-image: url(../imagens/rocket.png);}
-.guia:nth-child(2) div {background-image: url(../imagens/hat.png);}
-.guia:nth-child(3) div {background-image: url(../imagens/portfolio.png);}
-.guia:nth-child(4) div {background-image: url(../imagens/cardapio.png);}
-.guia:nth-child(5) div {background-image: url(../imagens/sobre.png);}
-.guia:nth-child(6) div {background-image: url(../imagens/contact.png);}
+/* Create an active/current menulink class */
+.menu button.active {
+  background-color: #ccc;
+}
 
-
-
+/* Style the menu content */
+.tabcontent {
+  display: none;
+}
