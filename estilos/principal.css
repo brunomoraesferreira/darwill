@@ -16,7 +16,6 @@ body
   display: flex;
   flex-direction: column;
   overflow:hidden;
-  color: white;
 }
 .capa {
   height: 40%;
@@ -56,15 +55,16 @@ body
   flex: 1;
   outline: none;
   cursor: pointer;
-  border: 0.1rem outset /*#0048C7*/;
+  background-color: dodgerblue;
+  border: 0.1rem outset #0048C7;
+  color: white;
+  
 }
-.menu button:hover {
-  background-color: #ddd;
-  border: 0.1rem outset /*#0048C7*/;
-}
+
 .menu button.botao-ativo {
-  background-color: #ccc;  
-  border: 0.1rem inset /*#0048C7*/;
+  background-color: rgb(117, 186, 255);
+  border: 0.1rem inset #0048C7;
+  color: blue;
 }
 .carrossel {
   width: 100%;
@@ -73,7 +73,7 @@ body
 .gallery {
 	padding: 1rem;
 	display: grid;
-	grid-template-columns: repeat(5, 90%);
+	grid-template-columns: repeat(6, 90%);
 	grid-template-rows: 1fr;
 	grid-column-gap: 1.5rem;
 	grid-row-gap: 2rem;
@@ -81,14 +81,12 @@ body
 	height: 100%;
 	scroll-snap-type: both mandatory;
 	scroll-padding: 1rem;
-  
-  
 }
 .scrol-ativo {
-	scroll-snap-type: proximity;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;/**/
+	scroll-snap-type: unset;
+
 }
+/*esconder a barra de rolagem */
 .gallery::-webkit-scrollbar {
   display: none;
 }
@@ -97,9 +95,33 @@ body
   scrollbar-width: none;
 }
 
-li {
+.ajustar-painel {
 	scroll-snap-align: center;
+  scroll-snap-stop: always;
 	display: inline-block;
 	border-radius: 3px;
-	font-size: 0;
+}
+.menu button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+.menu button div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 40%;
+  height: 40%;
+}
+
+.menu button:nth-child(1) div {background-image: url(../imagens/rocket.png);}
+.menu button:nth-child(2) div {background-image: url(../imagens/hat.png);}
+.menu button:nth-child(3) div {background-image: url(../imagens/portfolio.png);}
+.menu button:nth-child(4) div {background-image: url(../imagens/cardapio.png);}
+.menu button:nth-child(5) div {background-image: url(../imagens/sobre.png);}
+.menu button:nth-child(6) div {background-image: url(../imagens/sobre.png);}
+
+.menu button.botao-ativo:nth-child(6) div  {background-image: url(../imagens/sobre2.png);;
 }

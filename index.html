@@ -14,13 +14,14 @@
 				  <div class="titulo-do-painel">Praticas</div>
 				  <div class="corpo-do-painel">
 					<div class="carrossel">
-						<ul class="gallery">
-							<li style="background: red;"></li>
-							<li style="background: blue;"></li>
-							<li style="background: green;"></li>
-							<li style="background: orange;"></li>
-							<li style="background: magenta;"></li>
-						</ul>
+						<div class="gallery">
+							<div class="ajustar-painel" style="background: red;"></div>
+							<div class="ajustar-painel" style="background: blue;"></div>
+							<div class="ajustar-painel" style="background: green;"></div>
+							<div class="ajustar-painel" style="background: orange;"></div>
+							<div class="ajustar-painel" style="background: magenta;"></div>
+							<div class="ajustar-painel" style="background: cyan;"></div>
+						</div>
 					</div>
 				  </div>
 				</section>
@@ -46,13 +47,12 @@
 				</section>
 				</main>
 				<nav class="tab menu">
-				  
-				  <button class="tablinks" onclick="openCity(event, 'praticas')" onmouseover="openCity(event, 'praticas')"  id="defaultOpen">Praticas</button>
-				  <button class="tablinks" onmouseover="openCity(event, 'habilidades')">Habilidades</button>
-				  <button class="tablinks" onmouseover="openCity(event, 'trabalhos')">Trabalhos</button>
-				  <button class="tablinks" onmouseover="openCity(event, 'serviços')">Serviços</button>
-				  <button class="tablinks" onmouseover="openCity(event, 'sobre')">Sobre</button>
-				  <button class="tablinks" onmouseover="openCity(event, 'contato')">Contato</button>
+				  <button class="tablinks" onclick="openCity(event, 'praticas')" onmouseover="openCity(event, 'praticas')"  id="defaultOpen"><div class="teste"></div>Praticas</button>
+				  <button class="tablinks" onmouseover="openCity(event, 'habilidades')"><div></div>Habilidades</button>
+				  <button class="tablinks" onmouseover="openCity(event, 'trabalhos')"><div></div>Trabalhos</button>
+				  <button class="tablinks" onmouseover="openCity(event, 'serviços')"><div></div>Serviços</button>
+				  <button class="tablinks" onmouseover="openCity(event, 'sobre')"><div></div>Sobre</button>
+				  <button class="tablinks" onmouseover="openCity(event, 'contato')"><div></div>Contato</button>
 				</nav>
 		</section>
 	</section>
@@ -70,10 +70,12 @@
 		}
 		document.getElementById(cityName).style.display = "block";
   		evt.currentTarget.className += " botao-ativo";
+
 }
-		/*document.getElementById("defaultOpen").onmouseover();*/
 		document.getElementById("defaultOpen").click();
-		</script>
+	</script>
+
+
 		<script>
 const slider = document.querySelector('.gallery');
 let isDown = false;
