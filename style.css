@@ -34,11 +34,11 @@ html, body{
 	height: 100%;
 }
 
-body.demos .section {
+body.demos .secao {
     background: url(images/bg.png) repeat top center #f2f3f5;
 }
 
-body.demos .section-title img {
+body.demos .secao-title img {
     max-width: 280px;
     display: block;
     margin: 10px auto;
@@ -63,8 +63,8 @@ body.demos .container-fluid {
 
 a {
     color: #1f1f1f;
-    text-decoration: none !important;
-    outline: none !important;
+    text-decoration: none ;
+    outline: none ;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -83,7 +83,7 @@ h6 {
     position: relative;
     padding: 0 0 10px 0;
     font-weight: normal;
-    line-height: 120% !important;
+    line-height: 120% ;
     color: #333333;
     margin: 0
 }
@@ -119,7 +119,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none;
     opacity: 1
 }
 
@@ -140,8 +140,8 @@ a {
 
 a,
 .btn {
-    text-decoration: none !important;
-    outline: none !important;
+    text-decoration: none ;
+    outline: none ;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -151,7 +151,7 @@ a,
 
 .btn-custom {
     margin-top: 20px;
-    background-color: transparent !important;
+    background-color: transparent ;
     border: 2px solid #ddd;
     padding: 12px 40px;
     font-size: 16px;
@@ -271,7 +271,7 @@ a img.aligncenter {
 
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
+    position: absolute ;
     height: 1px;
     width: 1px;
     overflow: hidden;
@@ -281,7 +281,7 @@ a img.aligncenter {
     background-color: #f1f1f1;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
+    clip: auto ;
     color: #21759b;
     display: block;
     font-size: 14px;
@@ -340,7 +340,7 @@ a img.aligncenter {
 }
 
 /*------------------------------------------------------------------
-    SECTIONS
+    secaoS
 -------------------------------------------------------------------*/
 
 .main-banner{
@@ -462,7 +462,7 @@ xclip
     stroke: #ffffff;
 }
 
-.section {
+.secao {
     display: block;
     position: relative;
     overflow: hidden;
@@ -474,7 +474,7 @@ xclip
 }
 
 .noover .btn-dark {
-    border: 0 !important;
+    border: 0 ;
 }
 
 .nopad {
@@ -485,30 +485,30 @@ xclip
     padding-top: 0;
 }
 
-.section.wb {
+.secao.wb {
     background-color: #ffffff;
 }
 
-.section.lb {
+.secao.lb {
     background-color: #f2f3f5;
 }
 
-.section.db {
+.secao.db {
     background-color: #111111;
 }
 
-.section.color1 {
+.secao.color1 {
     background-color: #448AFF;
 }
 
-.first-section {
+.first-secao {
     display: block;
     position: relative;
     overflow: hidden;
     padding: 16em 0 13em;
 }
 
-.first-section h2 {
+.first-secao h2 {
     color: #ffffff;
     font-size: 68px;
     font-weight: 300;
@@ -519,7 +519,7 @@ xclip
     position: relative;
 }
 
-.first-section .lead {
+.first-secao .lead {
     font-size: 21px;
     font-weight: 300;
     padding: 0 0 40px;
@@ -535,13 +535,13 @@ xclip
     bottom: -6%;
 }
 
-.section-title {
+.secao-title {
     display: block;
     position: relative;
     margin-bottom: 60px;
 }
 
-.section-title p {
+.secao-title p {
     color: #999;
     font-weight: 400;
     font-size: 18px;
@@ -549,7 +549,7 @@ xclip
     margin: 0;
 }
 
-.section-title h3 {
+.secao-title h3 {
     font-size: 38px;
     font-weight: 500;
     line-height: 62px;
@@ -558,9 +558,9 @@ xclip
     text-transform: none;
 }
 
-.section.colorsection p,
-.section.colorsection h3,
-.section.db h3 {
+.secao.colorsecao p,
+.secao.colorsecao h3,
+.secao.db h3 {
     color: #ffffff;
 }
 
@@ -679,8 +679,8 @@ xclip
 
 .item-h2,
 .item-h1 {
-    height: 100% !important;
-    height: auto !important;
+    height: 100% ;
+    height: auto ;
 }
 
 .isotope-item {
@@ -737,7 +737,7 @@ xclip
 .portfolio-filter ul li .btn-dark {
     box-shadow: none;
     background-color: transparent;
-    border: 1px solid #e6e7e6 !important;
+    border: 1px solid #e6e7e6 ;
     color: #1f1f1f;
     font-weight: 400;
     font-size: 13px;
@@ -793,7 +793,7 @@ xclip
 .da-thumbs .pitem a div i {
     background-color: #1f1f1f;
     position: absolute;
-    color: #ffffff !important;
+    color: #ffffff ;
     bottom: 0;
     font-size: 15px;
     z-index: 12;
@@ -965,7 +965,7 @@ xclip
 
 .pricing-table-highlighted h3,
 .pricing-table-highlighted h2 {
-    color: #ffffff !important;
+    color: #ffffff ;
 }
 
 .pricing-table-sign-up {
@@ -992,11 +992,11 @@ xclip
     width: 50%;
     padding: 10px;
     float: left;
-    margin: 0 !important;
+    margin: 0 ;
 }
 
 .nav-pills > li > a {
-    margin: 0!important;
+    margin: 0;
     text-align: center;
     background-color: #f4f4f4;
 }
@@ -1027,16 +1027,16 @@ xclip
 .small-icons.icon-wrapper:hover i,
 .small-icons.icon-wrapper:hover i:hover,
 .small-icons.icon-wrapper i {
-    width: auto !important;
-    height: auto !important;
-    line-height: 1 !important;
-    padding: 0 !important;
-    color: #e3e3e3 !important;
-    background-color: transparent !important;
-    background: none !important;
-    margin-right: 10px !important;
+    width: auto ;
+    height: auto ;
+    line-height: 1 ;
+    padding: 0 ;
+    color: #e3e3e3 ;
+    background-color: transparent ;
+    background: none ;
+    margin-right: 10px ;
     vertical-align: middle;
-    font-size: 24px !important;
+    font-size: 24px ;
 }
 
 .small-icons.icon-wrapper h3 {
@@ -1178,8 +1178,8 @@ xclip
 }
 
 .service-widget h3 a,
-.section.wb .service-widget h3,
-.section.lb .service-widget h3 {
+.secao.wb .service-widget h3,
+.secao.lb .service-widget h3 {
     color: #1f1f1f;
 }
 
@@ -1257,18 +1257,18 @@ xclip
 	left: 0;
 }
 
-.section.wb .hover-up h3{
+.secao.wb .hover-up h3{
 	font-size: 32px;
 	color: #ffffff;
 }
 
-.section.wb .hover-up p{
+.secao.wb .hover-up p{
 	color: #cccccc;
 }
 
 .playbutton {
     position: absolute;
-    color: #ffffff !important;
+    color: #ffffff ;
     top: 40%;
     font-size: 60px;
     z-index: 12;
@@ -1281,7 +1281,7 @@ xclip
 .hoverbutton {
     background-color: #333333;
     position: absolute;
-    color: #ffffff !important;
+    color: #ffffff ;
     top: 70%;
     font-size: 21px;
     z-index: 12;
@@ -1326,7 +1326,7 @@ hr.invis1 {
     border-color: transparent;
 }
 
-.section.parallax hr.hr1 {
+.secao.parallax hr.hr1 {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1561,7 +1561,7 @@ hr.invis1 {
     color: #ffffff;
     padding: 15px 0 25px;
     margin: 0;
-    line-height: 1 !important;
+    line-height: 1 ;
     font-weight: 300;
 }
 
@@ -1623,7 +1623,7 @@ hr.invis1 {
 .features-right li:last-child,
 .features-left li:last-child {
     margin-bottom: 0px;
-    padding-bottom: 0 !important;
+    padding-bottom: 0 ;
 }
 
 .features-right li i,
@@ -1726,7 +1726,7 @@ hr.invis1 {
 }
 
 .bootstrap-select.fit-width {
-    width: auto !important;
+    width: auto ;
 }
 
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
@@ -1734,8 +1734,8 @@ hr.invis1 {
 }
 
 .bootstrap-select .dropdown-toggle:focus {
-    outline: thin dotted #333333 !important;
-    outline: 5px auto -webkit-focus-ring-color !important;
+    outline: thin dotted #333333 ;
+    outline: 5px auto -webkit-focus-ring-color ;
     outline-offset: -2px;
 }
 
@@ -1788,7 +1788,7 @@ hr.invis1 {
 
 .bootstrap-select.btn-group.disabled:focus,
 .bootstrap-select.btn-group > .disabled:focus {
-    outline: none !important;
+    outline: none ;
 }
 
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
@@ -1800,7 +1800,7 @@ hr.invis1 {
 
 .bootstrap-select.btn-group .dropdown-toggle .fa-angle-down {
     position: absolute;
-    top: 30% !important;
+    top: 30% ;
     right: -5px;
     vertical-align: middle;
 }
@@ -1819,8 +1819,8 @@ hr.invis1 {
 }
 
 .dropdown-menu > li > a {
-    background-color: transparent !important;
-    color: #bcbcbc !important;
+    background-color: transparent ;
+    color: #bcbcbc ;
     font-size: 15px;
     padding: 10px 20px;
 }
@@ -2011,16 +2011,16 @@ hr.invis1 {
 
 select.bs-select-hidden,
 select.selectpicker {
-    display: none !important;
+    display: none ;
 }
 
 select.mobile-device {
-    position: absolute !important;
+    position: absolute ;
     top: 0;
     left: 0;
-    display: block !important;
+    display: block ;
     width: 100%;
-    height: 100% !important;
+    height: 100% ;
     opacity: 0;
 }
 
@@ -2031,11 +2031,11 @@ select.mobile-device {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     font-size: 15px;
     height: 33px;
-    box-shadow: none !important;
-    border: 0 !important;
+    box-shadow: none ;
+    border: 0 ;
     padding: 0;
     width: 100%;
-    color: #bcbcbc !important;
+    color: #bcbcbc ;
 }
 
 .contact_form {
@@ -2056,15 +2056,15 @@ select.mobile-device {
     padding: 10px 25px;
     height: 55px;
     resize: none;
-    box-shadow: none !important;
+    box-shadow: none ;
     width: 100%;
 	border-radius: 0px;
 }
 
 .contact_form textarea {
     color: #bcbcbc;
-    padding: 20px 25px !important;
-    height: 160px !important;
+    padding: 20px 25px ;
+    height: 160px ;
 }
 
 .contact_form .form-control::-webkit-input-placeholder {
@@ -2085,7 +2085,7 @@ select.mobile-device {
 }
 
 
-#contact .section-title p{
+#contact .secao-title p{
 	color: #ffffff;
 }
 
@@ -2104,7 +2104,7 @@ select.mobile-device {
 }
 
 /*------------------------------------------------------------------
-    FOOTER
+    rodape
 -------------------------------------------------------------------*/
 
 .cac {
@@ -2117,7 +2117,7 @@ select.mobile-device {
 }
 
 .cac:hover a h3 {
-    color: #fff !important;
+    color: #fff ;
 }
 
 .cac a h3 {
@@ -2130,52 +2130,52 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
+    line-height: 1;
 }
 
-.footer {
-    padding: 90px 0 80px !important;
+.rodape {
+    padding: 90px 0 80px ;
     color: #999;
     background-color: #1f1f1f;
 }
 
-.footer .widget-title {
+.rodape .widget-title {
     position: relative;
     display: block;
     margin-bottom: 30px;
 }
 
-.footer .widget-title small {
+.rodape .widget-title small {
     color: #999;
     display: block;
     padding: 0 58px;
     text-transform: uppercase;
 }
 
-.footer .widget-title h3 {
+.rodape .widget-title h3 {
     color: #fff;
     font-weight: 300;
     font-size: 21px;
     padding: 0;
     margin: 0;
-    line-height: 1 !important;
+    line-height: 1 ;
 }
 
-.footer-links {
+.rodape-links {
     list-style: none;
     padding: 0;
 }
 
-.footer-links a {
+.rodape-links a {
     color: #999;
 }
 
-.footer-links a:hover,
-.footer a:hover {
-    color: #333333 !important;
+.rodape-links a:hover,
+.rodape a:hover {
+    color: #333333 ;
 }
 
-.footer-links li {
+.rodape-links li {
     margin-bottom: 10px;
     display: block;
     width: 100%;
@@ -2185,21 +2185,21 @@ select.mobile-device {
 
 .twitter-widget li {
     margin-bottom: 0;
-    border: 0 !important;
+    border: 0 ;
 }
 
 .twitter-widget li i {
-    border-right: 0 !important;
+    border-right: 0 ;
     margin-right: 0;
 }
 
-.footer-links li:last-child {
+.rodape-links li:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border: 0;
 }
 
-.footer-links i {
+.rodape-links i {
     display: inline-block;
     width: 25px;
     margin-right: 10px;
@@ -2217,26 +2217,26 @@ select.mobile-device {
 }
 
 
-/* Footer left */
+/* rodape left */
 
-.footer-distributed .footer-left {
+.rodape-distributed .rodape-left {
     float: left;
 }
 
-.footer-distributed .footer-links {
+.rodape-distributed .rodape-links {
     margin: 0 0 10px;
     text-transform: uppercase;
     padding: 0;
 }
 
-.footer-distributed .footer-links a {
+.rodape-distributed .rodape-links a {
     display: inline-block;
     line-height: 1.8;
     margin: 0 10px 0 10px;
     text-decoration: none;
 }
 
-.footer-distributed .footer-company-name {
+.rodape-distributed .rodape-company-name {
     font-weight: 300;
     margin: 0 10px;
     color: #666;
@@ -2244,20 +2244,20 @@ select.mobile-device {
 }
 
 
-/* Footer right */
+/* rodape right */
 
-.footer-distributed .footer-right {
+.rodape-distributed .rodape-right {
     float: right;
 }
 
 
 /* The search form */
 
-.footer-distributed form {
+.rodape-distributed form {
     position: relative;
 }
 
-.footer-distributed form input {
+.rodape-distributed form input {
     display: block;
     border-radius: 3px;
     box-sizing: border-box;
@@ -2271,30 +2271,30 @@ select.mobile-device {
     padding: 18px 50px 18px 18px;
 }
 
-.footer-distributed form input:focus {
+.rodape-distributed form input:focus {
     outline: none;
 }
 
 
 /* Changing the placeholder color */
 
-.footer-distributed form input::-webkit-input-placeholder {
+.rodape-distributed form input::-webkit-input-placeholder {
     color: #999;
 }
 
-.footer-distributed form input::-moz-placeholder {
+.rodape-distributed form input::-moz-placeholder {
     opacity: 1;
     color: #999;
 }
 
-.footer-distributed form input:-ms-input-placeholder {
+.rodape-distributed form input:-ms-input-placeholder {
     color: #999;
 }
 
 
 /* The magnify glass icon */
 
-.footer-distributed form i {
+.rodape-distributed form i {
     width: 18px;
     height: 18px;
     position: absolute;
@@ -2305,11 +2305,11 @@ select.mobile-device {
     margin-top: 6px;
 }
 
-.footer-distributed .footer-company-name a{
+.rodape-distributed .rodape-company-name a{
 	color: #ffffff;
 }
 
-.footer-distributed .footer-company-name a:hover{
+.rodape-distributed .rodape-company-name a:hover{
 	color: #cccccc;
 }
 
@@ -2347,7 +2347,7 @@ select.mobile-device {
     right: 50px;
     text-align: center;
     font-size: 28px;
-    color: #ffffff !important;
+    color: #ffffff ;
     cursor: pointer;
     -webkit-transition: all .7s ease-in-out;
     -moz-transition: all .7s ease-in-out;
@@ -2366,17 +2366,17 @@ select.mobile-device {
     color: #ffffff;
     margin: 0 auto;
     text-align: center;
-    padding: 0 !important;
-    border: 0 !important;
+    padding: 0 ;
+    border: 0 ;
 }
 
 .stat-wrap h3 {
     font-size: 18px;
     font-weight: 400;
-    color: #999 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1 !important:
+    color: #999 ;
+    margin: 0 ;
+    padding: 0 ;
+    line-height: 1;
 }
 
 .stat-wrap p {
@@ -2385,7 +2385,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1;
 }
 
 #preloader {
@@ -2444,13 +2444,13 @@ select.mobile-device {
 }
 
 .btn {
-    border: 0 !important;
+    border: 0 ;
 }
 
 .btn-light {
     padding: 10px 40px;
     font-size: 18px;
-    border: 2px solid #ffffff !important;
+    border: 2px solid #ffffff ;
     color: #ffffff;
     background-color: transparent;
 }
@@ -2458,7 +2458,7 @@ select.mobile-device {
 .btn-dark {
     padding: 13px 40px;
     font-size: 18px;
-    border: 1px solid #ececec !important;
+    border: 1px solid #ececec ;
     color: #1f1f1f;
     background-color: transparent;
 }
