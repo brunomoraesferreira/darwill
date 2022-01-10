@@ -25,7 +25,6 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <!--[if lt IE 9]>
@@ -44,8 +43,8 @@
     </div><!-- fim loader -->
     <!-- fim LOADER -->
 	
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <!-- cabeçalho -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
 			<img class="img-fluid" src="images/logo.png" alt="" />
@@ -54,7 +53,8 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- navegação -->
+        <nav class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger active" href="#home">Início</a>
@@ -78,9 +78,9 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contect Us</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
+        </nav>
+      </div> <!-- container-->
+    </header>
 	<!-- ----- seção início ----- -->
 	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
 		<div class="heading">
@@ -98,7 +98,8 @@
             <a href="#" class="sim-btn btn-hover-new" data-text="Contato"><span>Contato</span></a>
 
 		</div>
-	</section><!-- fim seção início -->
+	</section>
+    <!-- fim seção início -->
 
 	<svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 85 100" preserveAspectRatio="none">
         <path d="M-5 100 Q 0 20 5 100 Z
@@ -131,7 +132,9 @@
                 <div class="col-md-6">
                     <div class="message-box">                        
                         <h2>Ola, Mundo!</h2>
-                        <p>Meu nome é Bruno Moraes, e procuro fazer o meu melhor nas condições que tenho, sempre colocando o coração, mente e alma até mesmo nas menores coisas que faço, pois acredito que esse é o caminho para o sucesso."</p>
+                        <p>Meu nome é Bruno Moraes, e sou o tipo de pessoa que faz o seu meu melhor nas condições que tem. Eu sempre coloco o coração até mesmo nas menores coisas que faço, pois acredito que esse é o caminho para o sucesso.</p>
+                        <p>Meu nome é Bruno Moraes, e sou o tipo de pessoa que faz o seu meu melhor nas condições que tem. Eu sempre coloco o coração até mesmo nas menores coisas que faço, pois acredito que esse é o caminho para o sucesso.</p>
+                        <p>Boas vindas!!!</p>
                     </div><!-- fim messagebox -->
                 </div><!-- fim col -->
 
@@ -143,6 +146,7 @@
             </div><!-- fim row --> 
         </div><!-- fim container -->
     </section> <!-- fim seção sobre -->
+
 	<!-- ----- seção práticas ----- --> 
     <section id="services" class="secao lb">
         <div class="container">
@@ -208,8 +212,10 @@
                 </div><!-- fim col -->
             </div><!-- fim row -->
         </div><!-- fim container -->
-    </section><!-- fim seção práticas -->
-	
+    </section>
+    <!-- fim seção práticas -->
+
+	<!-- ----- seção portfolio ----- --> 
 	<section id="portfolio" class="secao lb">
 		<div class="container">
 			<div class="secao-title text-left">
@@ -286,8 +292,10 @@
 			</div>
 		</div>
 	</section>
-	
-	 <section id="testimonials" class="secao wb">
+    <!-- ----- fim seção portfolio ----- --> 
+
+	<!-- ----- seção wb ----- --> 
+	<section id="testimonials" class="secao wb">
         <div class="container">
             <div class="secao-title text-left">
                 <h3>Testimonials</h3>
@@ -376,8 +384,10 @@
                 </div><!-- fim col -->
             </div><!-- fim row -->
         </div><!-- fim container -->
-     </section><!-- fim secao -->
+    </section>
+    <!-- ----- fim seção wb ----- --> 
 	
+    <!-- ----- seção lb ----- --> 
 	<section id="blog" class="secao lb">
 		<div class="container">
 			<div class="secao-title text-left">
@@ -450,7 +460,9 @@
 			
 		</div>
 	</section>
+    <!-- ----- fim seção lb ----- --> 
 
+    <!-- ----- seção db ----- --> 
     <section id="contact" class="secao db">
         <div class="container">
             <div class="secao-title text-left">
@@ -495,8 +507,10 @@
                 </div><!-- fim col -->
             </div><!-- fim row -->
         </div><!-- fim container -->
-    </section><!-- fim secao -->
+    </section>
+    <!-- ----- fim seção db ----- --> 
 
+    <!-- ----- rodape ----- --> 
     <footer class="copyrights">
         <div class="container">
             <div class="rodape-distributed">
@@ -513,20 +527,25 @@
                 </div>
             </div>
         </div><!-- fim container -->
-    </footer><!-- fim copyrights -->
+    </footer>
+    <!-- ----- fim rodape ----- --> 
 
+    <!-- ----- scroll ----- --> 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-    <!-- ALL JS FILES -->
+    <!-- ----- arquivos js ----- --> 
     <script src="js/all.js"></script>
+
 	<!-- Camera Slider -->
 	<script src="js/jquery.mobile.customized.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script> 
 	<script src="js/parallaxie.js"></script>
 	<script src="js/headline.js"></script>
+
 	<!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
