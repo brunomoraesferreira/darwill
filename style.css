@@ -34,31 +34,14 @@ html, body{
 	height: 100%;
 }
 
-body.demos .secao {
+body .secao {
     background: url(images/bg.png) repeat top center #f2f3f5;
 }
 
-body.demos .secao-title img {
+body .secao-titulo img {
     max-width: 280px;
     display: block;
     margin: 10px auto;
-}
-
-body.demos .service-widget h3 {
-    border-bottom: 1px solid #ededed;
-    font-size: 18px;
-    padding: 20px 0;
-    background-color: #ffffff;
-}
-
-body.demos .service-widget {
-    margin: 0 0 30px;
-    padding: 30px;
-    background-color: #fff
-}
-
-body.demos .container-fluid {
-    max-width: 1080px
 }
 
 a {
@@ -300,7 +283,7 @@ a img.aligncenter {
 
 
 /*------------------------------------------------------------------
-    HEADER
+    CABECALHO
 -------------------------------------------------------------------*/
 
 .navbar-dark{
@@ -340,7 +323,7 @@ a img.aligncenter {
 }
 
 /*------------------------------------------------------------------
-    secaoS
+    SECAO
 -------------------------------------------------------------------*/
 
 .main-banner{
@@ -535,13 +518,13 @@ xclip
     bottom: -6%;
 }
 
-.secao-title {
+.secao-titulo {
     display: block;
     position: relative;
     margin-bottom: 60px;
 }
 
-.secao-title p {
+.secao-titulo p {
     color: #999;
     font-weight: 400;
     font-size: 18px;
@@ -549,7 +532,7 @@ xclip
     margin: 0;
 }
 
-.secao-title h3 {
+.secao-titulo h3 {
     font-size: 38px;
     font-weight: 500;
     line-height: 62px;
@@ -674,7 +657,7 @@ xclip
 
 
 /*------------------------------------------------------------------
-    PORTFOLIO
+    ALBUM
 -------------------------------------------------------------------*/
 
 .item-h2,
@@ -806,7 +789,7 @@ xclip
 
 
 /*------------------------------------------------------------------
-    TESTIMONIALS
+    TUTORIAIS
 -------------------------------------------------------------------*/
 
 .logos img {
@@ -2085,7 +2068,7 @@ select.mobile-device {
 }
 
 
-#contato .secao-title p{
+#contato .secao-titulo p{
 	color: #ffffff;
 }
 
