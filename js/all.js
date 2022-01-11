@@ -6961,7 +6961,7 @@ $('.owl-app').owlCarousel({
     })
 
     /*!
-     * PORTFOLIO
+     * ALBUM
      */
     ! function(t, i, s) {
         "use strict";
@@ -7638,7 +7638,7 @@ $('.owl-app').owlCarousel({
     }(window, jQuery);
 
 /*!
- * IMAGESLOAD PORTFOLIO
+ * IMAGESLOAD ALBUM
  */
 (function() {
     function e() {}
