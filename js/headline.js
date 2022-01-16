@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function($){
 	//set animation timing
 	var animationDelay = 2500,
