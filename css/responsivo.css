@@ -3,20 +3,17 @@
     .responsive-bar .logo {
         max-width: 60%;
         height: auto;
-        background-color: yellow;
     }
 }
 @media only screen and (min-width:600px) and (max-width: 767px) {
     .responsive-bar .logo {
         max-width: 55%;
         height: auto;
-        background-color: green;
     }
 }
 @media only screen and (min-width: 280px) and (max-width: 599px) {
     .responsive-bar .logo {
         max-width: 50%;
         height: auto;
-        background-color: brown;
     }
 }

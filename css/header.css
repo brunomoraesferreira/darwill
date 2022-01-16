@@ -139,34 +139,30 @@ nav.black .naveg li a:active {color: #fff;}
     nav .logo {
         display: none;
     }
+    nav {
+        top: -100%;
+        transition: ease-in-out 0.7s;
+    }
+    nav.active {
+        top:0;
+    }
     nav .naveg {
         position: absolute;
-        /*width: 100%;*/
         top: 60px;
         left: 0;
         
         background: #333;
-        display: none;
-    }
+        /*display: none;*/
+        display: flex;
+        flex-direction: column;
+        padding: 0.1rem 0 0.5rem;
+    }/*
     nav .naveg.active {
         display: flex;
         flex-direction: column;
         padding: 0.1rem 0 0.5rem;
     }
-    
-    /*
-    nav .naveg li {
-        width: 100%;
-        display: flex;
-    }
-
-    nav .naveg li a {
-        padding: 0;
-        padding-left: 2rem;
-        width: 100%;
-        line-height: 30px;
-        vertical-align: middle;
-    }*/
+    */
     nav .naveg li {
         width: 100%;
         display: flex;
