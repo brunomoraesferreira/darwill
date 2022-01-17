@@ -12,6 +12,7 @@
 @import url(css/geral.css);
 @import url(css/header.css);
 @import url(css/inicio.css);
+@import url(css/sobre.css);
 
 /*
 @import url(css/flaticon.css);
@@ -35,7 +36,6 @@ html {
 /*------------------------------------------------------------------
     
 -------------------------------------------------------------------*/
-
 body {
     height: 100%;
 }
@@ -47,13 +47,43 @@ main {
     display: flex;
     flex-direction: column;
 }
-
 .principal {
     position: relative;
 }
+.secao {
+    padding: 4rem 0 2rem;
+}
+.secao-titulo {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.secao-titulo h3 {
+    font-size: 4rem;
+}
+.secao-titulo p {
+    font-size: 1.5rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
+}
 /**************** ******************** *********************/
-
-
+.cardeneta {
+    
+}
 /**************** ******************** *********************/
 
 .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8 {
@@ -79,5 +109,5 @@ main {
 .content p {
     margin: 0;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
