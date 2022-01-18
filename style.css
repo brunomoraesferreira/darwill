@@ -51,8 +51,44 @@ main {
     position: relative;
 }
 .secao {
-    padding: 4rem 0 2rem;
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+[class*="col-"] {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bg-ii {
+    background-color: #f2f3f5;
+}
+@media /*only screen and*/ (min-width: 768px) {
+    .col-1 {max-width: 8.33%; flex: 0 0 8.33%;}
+    .col-2 {max-width: 16.66%; flex: 0 0 16.66%;}
+    .col-3 {max-width: 25%; flex: 0 0 25%;}
+    .col-4 {max-width: 33.33%; flex: 0 0 33.33%;}
+    .col-5 {max-width: 41.66%; flex: 0 0 41.66%;}
+    .col-6 {max-width: 50%; flex: 0 0 50%;}
+    .col-7 {max-width: 58.33%; flex: 0 0 58.33%;}
+    .col-8 {max-width: 66.66%; flex: 0 0 66.66%;}
+    .col-9 {max-width: 75%; flex: 0 0 75%;}
+    .col-10 {max-width: 83.33%; flex: 0 0 83.33%;}
+    .col-11 {max-width: 91.66%; flex: 0 0 91.66%;}
+    .col-12 {max-width: 100%; flex: 0 0 100%;}
+}
+
+
+/*------------------------------------------------------------------
+    
+-------------------------------------------------------------------*/
 .secao-titulo {
     padding-left: 1rem;
     margin-bottom: 1rem;
@@ -63,27 +99,46 @@ main {
 .secao-titulo p {
     font-size: 1.5rem;
 }
-.row {
+/*------------------------------------------------------------------
+    
+-------------------------------------------------------------------*/
+
+/**************** ******************** *********************/
+
+.cardeneta {
+    padding: 0 15px;
+    background: #fff;
+    margin-bottom: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    
+
 }
-.col {
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding: 1rem;
+.cardeneta div:nth-child(1)  {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+.cardeneta div:nth-child(1) i {
+    flex: 0 0 50%;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    background-image: url(images/favicon.ico);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+.cardeneta div:nth-child(1) h2 {
+
+}
+.cardeneta div:nth-child(2)  {
+    height: 40vh;
+    overflow-x: auto;
 }
 
-@media (min-width: 768px) {
-    .col {
-    flex: 0 0 50%;
-    max-width: 50%;
-    }
-}
-/**************** ******************** *********************/
-.cardeneta {
-    
-}
+
 /**************** ******************** *********************/
 
 .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8 {

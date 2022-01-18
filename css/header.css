@@ -141,10 +141,11 @@ nav.black .naveg li a:active {color: #fff;}
     }
     nav {
         top: -100%;
-        transition: ease-in-out 0.7s;
+        transition: ease-in-out 0.5s;
     }
     nav.active {
         top:0;
+        transition: ease-in-out 0.5s;
     }
     nav .naveg {
         position: absolute;
