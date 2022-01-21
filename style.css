@@ -8,6 +8,8 @@
 @import url(css/header.css);
 @import url(css/inicio.css);
 @import url(css/sobre.css);
+@import url(aprendizado.css);
+@import url(css/galeria.css);
 
 @import url(css/responsivo.css);
 
@@ -27,7 +29,7 @@
     font-size: 1.5rem;
 }
 /*------------------------------------------------------------------
-    
+    aprendizado
 -------------------------------------------------------------------*/
 
 
@@ -67,59 +69,3 @@
 /*------------------------------------------------------------------
     
 -------------------------------------------------------------------*/
-
-.album-imagens {
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-}
-
-.album-imagens ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.album-imagens ul li {
-    background-color: #eee;
-    padding:12px 20px;
-    margin: 5px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-.album-imagens ul li.active {
-    background-color: red;
-    color: white;
-}
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.product .itemBox {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-    display: block;
-}
-.product .itemBox.hide {
-    display: none;
-}
-.product .itemBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
