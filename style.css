@@ -42,27 +42,24 @@
     
 
 }
+
+
 .cardeneta div:nth-child(1)  {
     height: 10vh;
     display: flex;
-    flex-direction: column;
-}
-.cardeneta div:nth-child(1) i {
-    flex: 0 0 50%;
-    padding: 1rem 0;
-    display: flex;
     align-items: center;
-    background-image: url(images/favicon.ico);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
-}
-.cardeneta div:nth-child(1) h2 {
+    justify-content: center;
+    background-color: lemonchiffon;
+
 
 }
 .cardeneta div:nth-child(2)  {
-    height: 40vh;
-    overflow-x: auto;
+    height: 20vh;
+    padding: 0.5rem ;
+    /*overflow-x: scroll;*/
+    border-width: 0 0.2rem 0.2rem;
+    border-style: solid;
+    border-color: lemonchiffon;
 }
 
 
