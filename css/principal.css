@@ -39,18 +39,18 @@ main {
     overflow: hidden;
     padding: 70px 0;
 }
+.secao:nth-child(odd) {
+    background-color: #f2f3f5;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.bg-ii {
-    background-color: #f2f3f5;
-}
-
 [class*="col-"] {
     position: relative;
-    /* width: 100%; */
+    width: 100%;
+    flex: 0 0 100%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
