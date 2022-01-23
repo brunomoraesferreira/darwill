@@ -1,6 +1,6 @@
 (function() {
   
-  var slideContainer = $('.slide-container');
+  var slideContainer = $('.deslizante-aprendizado');
   
   slideContainer.slick();
   
