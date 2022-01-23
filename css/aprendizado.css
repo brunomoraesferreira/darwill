@@ -478,7 +478,7 @@
 /* ------------------------- */
 
 .caixa_habilidades {
-  padding: 1vw 0;
+  padding: 1vh 0;
   display: flex;
   justify-content: center;
 }
@@ -501,11 +501,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8vw;
+  font-size: 7.5vh;
   }
   .barraProgresso_habilidades canvas {
-  max-width: 30vw; /**/
-  max-height: 30vw; /**/
+  max-width: 15vh; /**/
+  max-height: 15vh; /**/
   position: relative;
   }
   
@@ -517,13 +517,15 @@
   z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: center;
   
   }
-
+/* //não apagar!
   .porcentagem_habilidades:after
   {
   content: attr(data-after);
-  font-size: 4vw;
+  font-size: 2vw;
+  position: absolute; //não faz parte, eu iria poscionar de forma diferente, mas desisti
   }
-  
+  */
 
