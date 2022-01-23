@@ -3,9 +3,12 @@
 -------------------------------------------------------------------*/
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+/*TEMPORARIO*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
+/*TEMPORARIO*/
+
 .slide-container {
   margin: auto;
   width: 600px;
