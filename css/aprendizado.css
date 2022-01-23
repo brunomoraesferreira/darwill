@@ -168,7 +168,7 @@
 
 .clearfix:after {
   visibility: hidden;
-  display: block;
+  /*display: block;*/
   font-size: 0;
   content: " ";
   clear: both;
@@ -176,21 +176,12 @@
 }
 
 .slick-prev {
-  left: 100px;
   z-index: 999;
 }
 
 .slick-next {
-  right: 100px;
   z-index: 999;
 }
-
-.slick-prev:before,
-.slick-next:before
-{
-    color: black;
-}
-
 
 /*------------------------------------------------------------------
     
@@ -199,19 +190,16 @@
 .slick-slider
 {
     position: relative;
-
-    display: block;
+    /* display: block; */
     box-sizing: border-box;
-
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
-        touch-action: pan-y;
+    touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -219,7 +207,7 @@
 {
     position: relative;
 
-    display: block;
+    /*display: block;*/
     overflow: hidden;
 
     margin: 0;
@@ -251,7 +239,7 @@
     top: 0;
     left: 0;
 
-    display: block;
+    /*display: block;*/
 }
 .slick-track:before,
 .slick-track:after
@@ -283,7 +271,7 @@
 }
 .slick-slide img
 {
-    display: block;
+    /*display: block;*/
 }
 .slick-slide.slick-loading img
 {
@@ -303,7 +291,7 @@
 }
 .slick-vertical .slick-slide
 {
-    display: block;
+    /*display: block;*/
 
     height: auto;
 
@@ -338,7 +326,7 @@
     position: absolute;
     top: 50%;
 
-    display: block;
+    /*display: block;*/
 
     width: 20px;
     height: 20px;
@@ -384,7 +372,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: gray;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -392,11 +380,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 1vw;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 1vw;
     left: auto;
 }
 .slick-prev:before
@@ -410,12 +398,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 1vw;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 1vw;
 }
 .slick-next:before
 {
@@ -437,7 +425,7 @@
     position: absolute;
     bottom: -25px;
 
-    display: block;
+    /*display: block;*/
 
     width: 100%;
     padding: 0;
@@ -465,7 +453,7 @@
     font-size: 0;
     line-height: 0;
 
-    display: block;
+    /*display: block;*/
 
     width: 20px;
     height: 20px;

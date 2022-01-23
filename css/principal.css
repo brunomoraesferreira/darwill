@@ -45,6 +45,7 @@ main {
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 [class*="col-"] {
