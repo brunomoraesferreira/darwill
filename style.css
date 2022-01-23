@@ -8,7 +8,7 @@
 @import url(css/header.css);
 @import url(css/inicio.css);
 @import url(css/sobre.css);
-
+@import url(css/aprendizado.css);
 @import url(css/galeria.css);
 
 @import url(css/responsivo.css);
@@ -28,13 +28,4 @@
 .secao-titulo p {
     font-size: 1.5rem;
 }
-/*------------------------------------------------------------------
-    aprendizado
--------------------------------------------------------------------*/
 
-
-
-
-/*------------------------------------------------------------------
-    
--------------------------------------------------------------------*/
