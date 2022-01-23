@@ -3,30 +3,21 @@
 -------------------------------------------------------------------*/
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
-/*TEMPORARIO*/
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-/*TEMPORARIO*/
 
-.deslizante-aprendizado {
-  margin: auto;
-  width: 600px;
-  text-align: center;
-}
-
-.wrapper {
+.card-caixa-aprendizado {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.wrapper:focus {
+.card-caixa-aprendizado:focus {
   outline: 0;
 }
 
-.card {
+.card__involucro {
   background: white;
-  width: 300px;
-  display: inline-block;
+  width: 80vw;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
   margin: auto;
   border-radius: 19px;
   position: relative;
@@ -41,57 +32,34 @@
   margin-bottom: 35px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  background-image: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.card__imagem--html-card {
+.card__imagem img {
+  width: 120%;
+  position: absolute;
+}
+.card-html-bg {
   background: url("../images/amarelo-300x300-bg.jpg");
 }
-.card__imagem--html-card img {
-  width: 400px;
-  position: absolute;
-  top: -65px;
-  left: -70px;
-}
-
-.card__imagem--css-card {
+.card-css-bg {
   background: url("../images/lilas-300x300-bg.jpg");
 }
-.card__imagem--css-card img {
-  width: 400px;
-  position: absolute;
-  top: -34px;
-  left: -37px;
-}
-
-.card__imagem--js-card {
+.card-js-bg {
   background: url("../images/vermelho-300x300-bg.jpg");
 }
-.card__imagem--js-card img {
-  width: 340px;
-  position: absolute;
-  top: -30px;
-  left: -25px;
-}
-
-.card__imagem--php-card {
+.card-php-bg {
   background: url("../images/verde-300x300-bg.jpg");
 }
-.card__imagem--php-card img {
-  width: 370px;
-  position: absolute;
-  top: -21px;
-  left: -37px;
-}
-
-.card__imagem--sql-card {
+.card-sql-bg {
   background: url("../images/azul-300x300-bg.jpg");
 }
-.card__imagem--sql-card img {
-  width: 345px;
-  position: absolute;
-  top: -28px;
-  left: -10px;
-}
+
 
 .card__aprendizado {
   text-transform: uppercase;
