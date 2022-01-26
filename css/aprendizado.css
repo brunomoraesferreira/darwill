@@ -2,33 +2,49 @@
     aprendizado
 -------------------------------------------------------------------*/
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+.deslizante-aprendizado {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 .card-caixa-aprendizado {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  /* */
+  max-width: 33.33%; 
+  flex: 0 0 33.33%;
+  /* */
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border: 1px solid black;
 }
 .card-caixa-aprendizado:focus {
   outline: 0;
 }
-
 .card__involucro {
   background: white;
   width: 80vw;
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  justify-content: center;
   border-radius: 19px;
   position: relative;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
   z-index: 9999;
 }
-
 .card__imagem {
   position: relative;
-  height: 230px;
+  height: 30vh;
   margin-bottom: 35px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
@@ -36,103 +52,55 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .card__imagem img {
-  width: 120%;
+  width: calc(120% - 1.5vw) ;
   position: absolute;
 }
-.card-html-bg {
-  background: url("../images/amarelo-300x300-bg.jpg");
-}
-.card-css-bg {
-  background: url("../images/lilas-300x300-bg.jpg");
-}
-.card-js-bg {
-  background: url("../images/vermelho-300x300-bg.jpg");
-}
-.card-php-bg {
-  background: url("../images/verde-300x300-bg.jpg");
-}
-.card-sql-bg {
-  background: url("../images/azul-300x300-bg.jpg");
-}
+.card-html-bg {background: url("../images/amarelo-300x300-bg.jpg");}
+.card-css-bg {background: url("../images/lilas-300x300-bg.jpg");}
+.card-js-bg {background: url("../images/vermelho-300x300-bg.jpg");}
+.card-php-bg {background: url("../images/verde-300x300-bg.jpg");}
+.card-sql-bg {background: url("../images/azul-300x300-bg.jpg");}
 
-
-.card__aprendizado {
+.card__textinho {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
-  margin-bottom: 3px;
+  line-height: 2rem;
 }
 
-.card__aprendizado--html-card {
-  color: #EC9B3B;
-}
-
-.card__aprendizado--css-card {
-  color: #EE5487;
-}
-
-.card__aprendizado--js-card {
-  color: #f25022;
-}
-
-.card__aprendizado--php-card {
-  color: #82BB30;
-}
-
-.card__aprendizado--sql-card {
-  color: #4FACFF;
-}
+.card__textinho--html-card {color: #EC9B3B;}
+.card__textinho--css-card {color: #EE5487;}
+.card__textinho--js-card {color: #f25022;}
+.card__textinho--php-card {color: #82BB30;}
+.card__textinho--sql-card {color: #4FACFF;}
 
 .card__nome {
   font-size: 26px;
   color: black;
   font-weight: 900;
-  margin-bottom: 5px;
 }
 
-.card__descricao {
+.card_grafico {
   margin-bottom: 10px;
+  line-height: 2rem;
 }
 
-.card__info--html-card {
-  background: #EC9B3B;
-}
-.card__info--html-card .campo {
-  border-right: 1px solid #BD7C2F;
-}
-
-.card__info--css-card {
-  background: #EE5487;
-}
-.card__info--css-card .campo {
-  border-right: 1px solid #D04976;
-}
-
-.card__info--js-card {
-  background: #f25022;
-}
-.card__info--js-card .campo {
-  border-right: 1px solid #9b2c0d;
-}
-
-.card__info--php-card {
-  background: #82BB30;
-}
-.card__info--php-card .campo {
-  border-right: 1px solid #71a32a;
-}
-
-.card__info--sql-card {
-  background: #4FACFF;
-}
-.card__info--sql-card .campo {
-  border-right: 1px solid #309eff;
-}
+.card__info--html-card {background: #EC9B3B;}
+.card__info--html-card .campo {border-right: 1px solid #BD7C2F;}
+.card__info--css-card {background: #EE5487;}
+.card__info--css-card .campo {border-right: 1px solid #D04976;}
+.card__info--js-card {background: #f25022;}
+.card__info--js-card .campo {border-right: 1px solid #9b2c0d;}
+.card__info--php-card {background: #82BB30;}
+.card__info--php-card .campo {border-right: 1px solid #71a32a;}
+.card__info--sql-card {background: #4FACFF;}
+.card__info--sql-card .campo {border-right: 1px solid #309eff;}
 
 .card__info {
   color: white;
@@ -143,7 +111,7 @@
 .card__info .campo {
   width: 33%;
   float: left;
-  padding: 20px 15px;
+  padding: 2vh 15px;
 }
 .card__info sup {
   position: absolute;
@@ -185,293 +153,6 @@
 /*------------------------------------------------------------------
     
 -------------------------------------------------------------------*/
-/* Slider */
-.slick-slider
-{
-    position: relative;
-    /* display: block; */
-    user-select: none;
-    touch-action: pan-y;
-}
-
-.slick-list
-{
-    position: relative;
-    /*display: block;*/
-    overflow: hidden;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-track
-{
-    position: relative;
-    /*display: block;*/
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    /*display: block;*/
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    /*display: block;*/
-
-    height: auto;
-
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-/********************/
-/* Slider */
-.slick-loading .slick-list
-{
-    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
-}
-
-/* Icons */
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('../fonts/slick.woff') format('woff');
-}
-/* Arrows */
-.slick-prev,
-.slick-next
-{
-    font-size: 0;
-    line-height: 0;
-
-    position: absolute;
-    top: 50%;
-
-    /*display: block;*/
-
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
-{
-    color: transparent;
-    outline: none;
-    background: transparent;
-}
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before
-{
-    opacity: 1;
-}
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
-{
-    opacity: .25;
-}
-
-.slick-prev:before,
-.slick-next:before
-{
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
-    color: gray;
-
-}
-
-.slick-prev
-{
-    left: 1vw;
-}
-[dir='rtl'] .slick-prev
-{
-    right: 1vw;
-    left: auto;
-}
-.slick-prev:before
-{
-    content: '←';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '→';
-}
-
-.slick-next
-{
-    right: 1vw;
-}
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: 1vw;
-}
-.slick-next:before
-{
-    content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
-}
-
-/* Dots */
-.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
-
-.slick-dots
-{
-    position: absolute;
-    bottom: -25px;
-
-    /*display: block;*/
-
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
-}
-.slick-dots li
-{
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-
-    cursor: pointer;
-}
-.slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    /*display: block;*/
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.slick-dots li button:hover,
-.slick-dots li button:focus
-{
-    outline: none;
-}
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before
-{
-    opacity: 1;
-}
-.slick-dots li button:before
-{
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 20px;
-
-    content: '•';
-    text-align: center;
-
-    opacity: .25;
-    color: black;
-
-
-}
-.slick-dots li.slick-active button:before
-{
-    opacity: .75;
-    color: black;
-}
 
 /* ------------------------- */
 /* habilidades ------------- */
