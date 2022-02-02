@@ -8,14 +8,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: red;
 }
-
-.card-caixa-aprendizado {
+.midiaMaior .card-caixa-aprendizado {
+  max-width: 20%; 
+  flex: 0 0 20%;}
+.midiaMenor .card-caixa-aprendizado {  
   flex: 0 0 100%;
   max-width: 100%;
+}
+.card-caixa-aprendizado {
+
   /* */
-  max-width: 33.33%; 
-  flex: 0 0 33.33%;
+
+  
   /* */
   padding-top: 10vh;
   padding-bottom: 5vh;
@@ -32,7 +38,7 @@
 .card__involucro {
   background: white;
   width: 80vw;
-  max-width: 300px;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,30 +48,6 @@
   box-shadow: -1px 15px 30px -12px black;
   z-index: 9999;
 }
-.card__imagem {
-  position: relative;
-  height: 30vh;
-  margin-bottom: 35px;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  background-image: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card__imagem img {
-  width: calc(120% - 1.5vw) ;
-  position: absolute;
-}
-.card-html-bg {background: url("../images/amarelo-300x300-bg.jpg");}
-.card-css-bg {background: url("../images/lilas-300x300-bg.jpg");}
-.card-js-bg {background: url("../images/vermelho-300x300-bg.jpg");}
-.card-php-bg {background: url("../images/verde-300x300-bg.jpg");}
-.card-sql-bg {background: url("../images/azul-300x300-bg.jpg");}
 
 .card__textinho {
   text-transform: uppercase;
@@ -80,75 +62,39 @@
 .card__textinho--php-card {color: #82BB30;}
 .card__textinho--sql-card {color: #4FACFF;}
 
-.card__nome {
+.card-topo {
   font-size: 26px;
   color: black;
   font-weight: 900;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  line-height: 4rem;
 }
 
 .card_grafico {
   margin-bottom: 10px;
   line-height: 2rem;
 }
-
-.card__info--html-card {background: #EC9B3B;}
-.card__info--html-card .campo {border-right: 1px solid #BD7C2F;}
-.card__info--css-card {background: #EE5487;}
-.card__info--css-card .campo {border-right: 1px solid #D04976;}
-.card__info--js-card {background: #f25022;}
-.card__info--js-card .campo {border-right: 1px solid #9b2c0d;}
-.card__info--php-card {background: #82BB30;}
-.card__info--php-card .campo {border-right: 1px solid #71a32a;}
-.card__info--sql-card {background: #4FACFF;}
-.card__info--sql-card .campo {border-right: 1px solid #309eff;}
-
-.card__info {
+.card-fundo {
   color: white;
   font-weight: 700;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
+  line-height: 4rem;
 }
-.card__info .campo {
-  width: 33%;
-  float: left;
-  padding: 2vh 15px;
-}
-.card__info sup {
-  position: absolute;
-  bottom: 4px;
-  font-size: 45%;
-  margin-left: 2px;
-}
-.card__info .valor-campo {
-  position: relative;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.card__info .nome-campo {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 12px;
-}
-.card__info .no-border {
-  border-right: none;
-}
+.card-bg-html {background: #EC9B3B;}
+.card-bg-html .campo {border-right: 1px solid #BD7C2F;}
+.card-bg-css {background: #EE5487;}
+.card-bg-css .campo {border-right: 1px solid #D04976;}
+.card-bg-js {background: #f25022;}
+.card-bg-js .campo {border-right: 1px solid #9b2c0d;}
+.card-bg-php {background: #82BB30;}
+.card-bg-php .campo {border-right: 1px solid #71a32a;}
+.card-bg-sql {background: #4FACFF;}
+.card-bg-sql .campo {border-right: 1px solid #309eff;}
 
-.clearfix:after {
-  visibility: hidden;
-  /*display: block;*/
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
 
-.slick-prev {
-  z-index: 999;
-}
 
-.slick-next {
-  z-index: 999;
-}
 
 /*------------------------------------------------------------------
     
