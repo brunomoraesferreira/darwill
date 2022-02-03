@@ -1,7 +1,8 @@
 /*------------------------------------------------------------------
     aprendizado
 -------------------------------------------------------------------*/
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css);
 
 .deslizante-aprendizado {
   width: 100%;
@@ -15,7 +16,6 @@
     max-width: 100%;
   }
 }
-
 
 @media only screen and (min-width: 768px) {
   .card-caixa-aprendizado {
@@ -35,7 +35,9 @@
     flex: 0 0 20%;
   }
 }
-
+.slider .card__involucro {
+  margin: auto;
+}
 .card-caixa-aprendizado {
   padding-top: 10vh;
   padding-bottom: 5vh;
