@@ -326,9 +326,17 @@
     <script src="js/galeria.js"></script>
 
     <script>
-      /*$(window).resize( function() {
-        window.location.href = window.location.href;
-      });*/
+
+    function recarregarPagina(){
+      // Sem redimencionamento à 100ms!
+      location.reload();
+    }
+
+    var x;
+    window.onresize = function(){
+      clearTimeout(x);
+      x = setTimeout(recarregarPagina, 100);
+    };
 
 
       
