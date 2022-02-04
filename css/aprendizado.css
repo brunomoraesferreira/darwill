@@ -38,6 +38,9 @@
 .slider .card__involucro {
   margin: auto;
 }
+.slider {
+  cursor: grab;
+}
 .card-caixa-aprendizado {
   padding-top: 10vh;
   padding-bottom: 5vh;
