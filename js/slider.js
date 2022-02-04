@@ -6,3 +6,4 @@
           autoplaySpeed: 3000  /*Velocidade dA reprodução automática em milissegundos, o padrão é 3000*/ 
         });
       });
+
