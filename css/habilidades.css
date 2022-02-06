@@ -1,0 +1,137 @@
+/*------------------------------------------------------------------
+    Seção Habilidades
+-------------------------------------------------------------------*/
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css);
+
+
+.card-caixa-aprendizado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-caixa-aprendizado:focus {
+  outline: 0;
+}
+.card__involucro {
+  background: white;
+  width: 80vw;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+}
+
+.card__textinho {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.card__textinho-html {color: #EC9B3B;}
+.card__textinho-css {color: #EE5487;}
+.card__textinho-js {color: #f25022;}
+.card__textinho-php {color: #82BB30;}
+.card__textinho-sql {color: #4FACFF;}
+.card__textinho-xml {color: #8d38fc;}
+
+.card-topo {
+  color: black;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  line-height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.card-topo h2 {
+   font-size: 60px; 
+}
+.card_grafico {
+  margin-bottom: 10px;
+  line-height: 2rem;
+}
+.card-fundo {
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  line-height: 4rem;
+}
+.card-bg-html {background: #EC9B3B;}
+.card-bg-css {background: #EE5487;}
+.card-bg-js {background: #f25022;}
+.card-bg-php {background: #82BB30;}
+.card-bg-sql {background: #4FACFF;}
+.card-bg-xml {background: #8d38fc;}
+
+
+
+
+
+
+/*------------------------------------------------------------------
+    
+-------------------------------------------------------------------*/
+
+/* ------------------------- */
+/* habilidades ------------- */
+/* ------------------------- */
+
+.caixa_habilidades {
+  padding: 1vh 0;
+  display: flex;
+  justify-content: center;
+}
+  .cartao_habilidades {
+  font-weight: 700;
+  }
+  
+  .html-graf:hover {color: #EC9B3B;}
+  .css-graf:hover {color: #EE5487;}
+  .js-graf:hover {color: #f25022;}
+  .php-graf:hover {color: #82BB30;}
+  .sql-graf:hover {color: #4FACFF;}
+
+  .grafico_habilidades {
+    box-shadow: 0vw 0vw 2.5vw #000000 inset;
+    border-radius: 50%;
+    }
+  
+  .barraProgresso_habilidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.5vh;
+  }
+  .barraProgresso_habilidades canvas {
+  max-width: 15vh; /**/
+  max-height: 15vh; /**/
+  position: relative;
+  }
+  
+  .porcentagem_habilidades
+  {
+  line-height: 1;
+  transition: 0.5s;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+/* //não apagar!
+  .porcentagem_habilidades:after
+  {
+  content: attr(data-after);
+  font-size: 2vw;
+  position: absolute; //não faz parte, eu iria poscionar de forma diferente, mas desisti
+  }
+  */
+
