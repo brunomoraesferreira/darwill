@@ -98,6 +98,7 @@
   .js-graf:hover {color: #f25022;}
   .php-graf:hover {color: #82BB30;}
   .sql-graf:hover {color: #4FACFF;}
+  .xml-graf:hover {color: #8d38fc;}
 
   .grafico_habilidades {
     box-shadow: 0vw 0vw 2.5vw #000000 inset;
