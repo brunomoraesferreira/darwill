@@ -1,7 +1,7 @@
 
 
 		(function ($) {
-	        var $container = $('.portfolio'),
+	        var $container = $('.galeria'),
 	            colWidth = function () {
 	                var w = $container.width(), 
 	                    columnNum = 1,
@@ -36,14 +36,14 @@
 	                setTimeout(function() {
 	                }, 3000);   
 	            }
-	            $('nav.portfolio-filter ul a').on('click', function() {
+	            $('nav.galeria-filter ul a').on('click', function() {
 	                var selector = $(this).attr('data-filter');
 	                $container.isotope({ filter: selector }, refreshWaypoints());
-	                $('nav.portfolio-filter ul a').removeClass('active');
+	                $('nav.galeria-filter ul a').removeClass('active');
 	                $(this).addClass('active');
 	                return false;
 	            });
-	            function setPortfolio() { 
+	            function setGaleria() { 
 	                setColumns();
 	                $container.isotope('reLayout');
 	            }

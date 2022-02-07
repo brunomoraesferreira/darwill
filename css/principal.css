@@ -640,7 +640,7 @@ xclip
 
 
 
-.services-inner-box{
+.habilidades-inner-box{
 	padding: 15px;
 	background: #ffffff;
 	margin-bottom: 30px;
@@ -655,14 +655,14 @@ xclip
 	font-size: 50px;
 	color: #333333;
 }
-.services-inner-box h2{
+.habilidades-inner-box h2{
 	/* font-size: 22px; */
 	font-weight: 600;
 }
 
 
 /*------------------------------------------------------------------
-    PORTFOLIO
+    GALERIA
 -------------------------------------------------------------------*/
 
 .item-h2,
@@ -701,7 +701,7 @@ xclip
     transition-property: transform, opacity;
 }
 
-.portfolio-filter ul {
+.galeria-filter ul {
     padding: 0;
     z-index: 2;
     display: block;
@@ -709,7 +709,7 @@ xclip
     margin: 0;
 }
 
-.portfolio-filter ul li {
+.galeria-filter ul li {
     border-radius: 0;
     display: inline-block;
     margin: 0 5px 0 0;
@@ -718,11 +718,11 @@ xclip
     vertical-align: middle;
 }
 
-.portfolio-filter ul li:last-child:after {
+.galeria-filter ul li:last-child:after {
     content: "";
 }
 
-.portfolio-filter ul li .btn-dark {
+.galeria-filter ul li .btn-dark {
     box-shadow: none;
     background-color: transparent;
     border: 1px solid #e6e7e6 !important;
@@ -1440,33 +1440,6 @@ hr.invis1 {
 	overflow: hidden;
 	-webkit-box-shadow: 0 0 10px #ccc;
 	box-shadow: 0 0 10px #ccc;
-}
-
-.gallery-list .img-overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: rgba(51, 51, 51, 0.80);
-    color: #35424C;
-    opacity: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    z-index: 2;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-}
-
-.gallery-list .gallery-single:hover .img-overlay {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.gallery-list .gallery-single:hover .img-overlay .hoverbutton{
-	opacity: 1;
-	top: 50%;
 }
 
 

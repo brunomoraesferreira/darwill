@@ -45,10 +45,10 @@
 	  $(window).scroll(navbarCollapse);
 
 	// Hide navbar when modals trigger
-	  $('.portfolio-modal').on('show.bs.modal', function(e) {
+	  $('.galeria-modal').on('show.bs.modal', function(e) {
 		$(".navbar").addClass("d-none");
 	  })
-	  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+	  $('.galeria-modal').on('hidden.bs.modal', function(e) {
 		$(".navbar").removeClass("d-none");
 	  })
 
@@ -89,8 +89,8 @@
 	// Gallery Filter
         var Container = $('.container');
         Container.imagesLoaded(function () {
-            var portfolio = $('.gallery-menu');
-            portfolio.on('click', 'button', function () {
+            var galeria = $('.gallery-menu');
+            galeria.on('click', 'button', function () {
                 $(this).addClass('active').siblings().removeClass('active');
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
