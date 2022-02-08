@@ -473,21 +473,10 @@ xclip
     padding-top: 0;
 }
 
-.section.wb {
-    background-color: #ffffff;
-}
-
-.section.lb {
-    background-color: #f2f3f5;
-}
-
-.section.db {
-    background-color: #111111;
-}
-
-.section.color1 {
-    background-color: #448AFF;
-}
+.section.wb {background-color: #ffffff;}
+.section.lb {background-color: #f2f3f5;}
+.section.db {background-color: #111111;}
+.section.color1 {background-color: #448AFF;}
 
 .first-section {
     display: block;
