@@ -1,36 +1,9 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
 
-
     .section:nth-child(odd) {
         background-color: #ffffff;
     }
     .section:nth-child(even) {
         background-color: #f2f3f5;
-    }
-
-    .filter-button-group{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-    }
-    
-    .filter-button-group button.active{
-
-    }
-    
-    .filter-button-group button{
-        color: #333;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 14px;
-        cursor: pointer;
-        background: #fff;
-        width: 165px;
-        padding: 12px 0;
-        border: none;
-        border-radius: 0px;
-        margin: 2.1px;
     }
