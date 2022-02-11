@@ -2,7 +2,11 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 @import url(css/bootstrap.min.css);
-@import url(css/principal.css);
 @import url(css/font-awesome.min.css);
+
+@import url(css/principal.css);
+@import url(css/habilidades);
+
+
 @import url(css/responsive.css);
 @import url(css/custom.css);
