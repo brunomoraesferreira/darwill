@@ -332,6 +332,12 @@ xclip
     overflow: hidden;
     padding: 70px 0;
 }
+.section:nth-child(odd) {
+    background-color: #ffffff;
+}
+.section:nth-child(even) {
+    background-color: #f2f3f5;
+}
 
 .noover {
     overflow: visible;
