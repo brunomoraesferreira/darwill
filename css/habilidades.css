@@ -13,6 +13,7 @@ max-width: 550px;
   font-weight: bolder;
   /*font-family: 'Pacifico', cursive;*/
   color: #666;
+  line-height: 1.583rem !important;
 }
 .coluna-habilidades p{
   padding: 0;
