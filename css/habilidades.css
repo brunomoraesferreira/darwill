@@ -1,12 +1,87 @@
-.cartao {
-  word-wrap: break-word;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+.caixa-habilidades {
+display: flex;
+flex-wrap: wrap;
+background-color: #fff;
+padding: 15px 0;
+max-width: 550px;
+}
+.coluna-habilidades h4 {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  /*font-family: 'Pacifico', cursive;*/
+  color: #666;
+}
+.coluna-habilidades p{
+  padding: 0;
+  margin: 0;
+  /*font-family: 'Homemade Apple', cursive;*/
+}
+
+.primLinha-habilidades, 
+.linha-habilidades {
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
-  padding: 20px;
-  margin-bottom: 5px;
-  display: flex; 
-  flex-direction: row;
-  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding-left: 10px;
+}
+
+.primLinha-habilidades {
+  border-color: rgb(255, 161, 161);
+}
+
+@media only screen and (max-width: 475px){
+  .coluna-habilidades:nth-child(1) {
+    width: 40%;
+  }
+  .coluna-habilidades:nth-child(2) {
+    width: 60%;
+  }
+  .coluna-habilidades:nth-child(3) {
+    width: 100%;
+  }
+  .vazio {
+    display: none;
+  }
+  .plh-div {
+    border-color: rgba(0,0,0,.125);
+  }
+}
+@media only screen and (min-width: 476px){
+  .coluna-habilidades:nth-child(1) {
+    width: 30%;
+  }
+  .coluna-habilidades:nth-child(2) {
+    width: 40%;
+  }
+  .coluna-habilidades:nth-child(3) {
+    width: 30%;
+  }
+  .vazio {
+    display: block;
+  }
+}
+
+.coluna-habilidades a:link {text-decoration: none;color: #999;}
+.coluna-habilidades a:visited {text-decoration: none;color: #999;}
+.coluna-habilidades a:hover {
+  color: #f00; 
+  font-weight: bold; 
+  text-decoration: underline wavy red !important;} 
+.coluna-habilidades a:active {text-decoration: none;color: #999;}
+
+:root {
+--shadow-color: 286deg 36% 56%;
+
+--shadow-elevation-medium:
+  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+  0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+  2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+  5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+.caixa-habilidades {
+  box-shadow: var(--shadow-elevation-medium);
 }
