@@ -1,11 +1,10 @@
 
-.caixa-cartao-visita {
+.caixa-cartao-profissional {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.cartao-sobre {
+.cartao-profissional {
     position: relative;
     width: 340px;
     height: 450px;
@@ -21,11 +20,10 @@
       2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
       5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
     }
-.cartao-sobre {
+.cartao-profissional {
         box-shadow: var(--shadow-elevation-medium);
-        
 }
-.area-imagem-cartao {
+.caixaDaImagem-cartao-profissional {
     position: absolute;
     top: -190px;
     left: 50%;
@@ -35,7 +33,7 @@
     background: #333;
     clip-path: circle();
 }
-.area-imagem-cartao::before {
+.caixaDaImagem-cartao-profissional::before {
     content: '';
     position: absolute;
     top: -8px;
@@ -48,7 +46,7 @@
     z-index: 1000;
     pointer-events: none;
 }
-.area-imagem-cartao .caixa-avatar-sobre {
+.caixaDaImagem-cartao-profissional .imagem-cartao-profissional {
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -57,7 +55,7 @@
     height: 310px;
     background: #ff0;
 }
-.area-imagem-cartao .caixa-avatar-sobre img {
+.caixaDaImagem-cartao-profissional .imagem-cartao-profissional img {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,10 +65,10 @@
     transition: 0.5s;
     transform-origin: top;
 }
-.area-imagem-cartao .caixa-avatar-sobre:hover img {
+.caixaDaImagem-cartao-profissional .imagem-cartao-profissional:hover img {
     transform: scale(1.5);
 }
-.conteudo-cartao-sobre {
+.caixaInformacoes-cartao-profissional {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -84,19 +82,18 @@
     padding: 3px 5px;
     border-radius: 2px;
 }
-.conteudo-cartao-sobre h4 {
+.caixaInformacoes-cartao-profissional h4 {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 7px;
     padding: 0;
 }
-.desc-texto-sobre {
+.informacoes-cartao-profissional {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-.desc-texto-sobre h5{ 
+.informacoes-cartao-profissional h5{ 
     padding: 0;
     font-weight: 900 !important;
     color: #e91e39;
