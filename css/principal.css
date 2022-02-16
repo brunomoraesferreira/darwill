@@ -328,10 +328,12 @@ xclip
 
 .section {
     FONT-VARIANT: JIS78;
-    display: block;
+    display: flex;
+    align-items: center;
     position: relative;
     overflow: hidden;
     padding: 70px 0;
+    height: calc(100vh - 50px);
 }
 .section:nth-child(odd) {
     background-color: #ffffff;
