@@ -1113,7 +1113,7 @@ select.mobile-device {
 -------------------------------------------------------------------*/
 
 .dmtop.show {
-    bottom: 50px;
+    bottom: 20px;
 }
 
 .progress {
@@ -1126,15 +1126,15 @@ select.mobile-device {
 }
 
 .dmtop {
-    background-color: #3C3D41;
+    background-color: #3c3d41;
     z-index: 100;
     width: 50px;
     height: 50px;
     line-height: 47px;
     position: fixed;
     bottom: -100px;
-    border-radius: 3px;
-    right: 50px;
+    border-radius: 25px;
+    right: 20px;
     text-align: center;
     font-size: 28px;
     color: #ffffff !important;
@@ -1144,6 +1144,10 @@ select.mobile-device {
     -o-transition: all .7s ease-in-out;
     -ms-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
+    opacity: 0.5;
+}
+.dmtop:hover {
+    opacity: 1;
 }
 
 

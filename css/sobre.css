@@ -2,9 +2,12 @@
     .sobre-a {
         display: none;
     }
+    .cartao-profissional {
+        margin-top: 60px;
+    }
 }
 @media screen and (min-width: 768px) {
-    .sobre-b, .sobre-c {
+    .sobre-b {
         display: none;
     }
     .sobre-a {
@@ -96,6 +99,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.caixaInformacoes-cartao-profissional-frente a {
+    width: fit-content;
 }
 .fa-linkedin {
     background: #0077b5;
