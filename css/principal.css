@@ -327,6 +327,7 @@ xclip
 }
 
 .section {
+    FONT-VARIANT: JIS78;
     display: block;
     position: relative;
     overflow: hidden;

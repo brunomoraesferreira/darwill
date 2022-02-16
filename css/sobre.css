@@ -1,14 +1,27 @@
-
+@media screen and (max-width: 767px) {
+    .sobre-a {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre-b, .sobre-c {
+        display: none;
+    }
+    .sobre-a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .caixa-cartao-profissional {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     position: relative;
 }
 .cartao-profissional {
     position: relative;
-    width: 340px;
+    width: 300px;
     height: 450px;
     background-color: beige;
     border-radius: 10px;
@@ -56,7 +69,7 @@
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 340px;
+    width: 300px;
     height: 310px;
     background: #ff0;
 }
@@ -146,7 +159,7 @@
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 340px;
+    width: 300px;
     height: 380px;
     background: #fff;
     padding: 20px 10px 0 30px;
@@ -157,7 +170,7 @@
     font-weight: 700;    
 }
 .texto-cartao-profissional p{
-    font-size: 0.75rem;
+    font-size: 0.713rem;
     margin-bottom: 3px;
     line-height: 1.7;
     
@@ -304,4 +317,5 @@
  /* *********************************** */
 /* botao flip cartao profissional */
 /* *********************************** */
-/*
+
+
