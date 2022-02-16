@@ -3,7 +3,7 @@
         display: none;
     }
     .cartao-profissional {
-        margin-top: 10px;
+        margin-top: /*60px*/0;
     }
 }
 @media screen and (min-width: 768px) {
