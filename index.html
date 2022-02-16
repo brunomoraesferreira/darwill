@@ -139,8 +139,8 @@
   <!-- ------------------------------------------------------------------------ -->
   <div id="about" class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row" style="height: 100vh">
+        <div class="col-md-6" style="display: none;">
           <div class="message-box">
             <h2>Ola, Mundo!</h2>
             <p>Meu nome é Bruno Moraes, sou domiciliado em Brasília, Brasil. A minha esposa e filho são os amores da
@@ -155,9 +155,9 @@
           </div><!-- end messagebox -->
         </div><!-- end col -->
 
-        <div class="col-md-6 caixa-cartao-profissional">
+        <div class="col-md-6 caixa-cartao-profissional flip_box">
           <!-- ---------------------------------------- -->
-          <div class="cartao-profissional frente">
+          <div class="cartao-profissional front">
             <div class="caixaDaImagem-cartao-profissional">
               <div class="imagem-cartao-profissional">
                   <img src="uploads/about_04.jpg" alt="">
@@ -170,16 +170,53 @@
               <h4>Bruno Moraes</h4>
               <div class="informacoes-cartao-profissional-frente">
                   <h5>Profissional Digital</h5>
-                  <a href="#">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
+                  <div class='r_wrap'>
+                    <div class='b_round'></div>
+                    <div class='s_round'>
+                      <div class="botao-flip-cartao-profissional">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div><!-- fim da frente cartao profissional -->
           <!-- ---------------------------------------- -->
-
+          <div class="cartao-profissional back">
+            <div class="caixaDeTexto-cartao-profissional">
+              <div class="texto-cartao-profissional">
+                  <h4>Ola, Mundo!</h4>
+                  <p>Meu nome é Bruno Moraes, sou domiciliado em Brasília, Brasil. A minha esposa e filho são os amores da
+                    minha vida, minhas razões de viver.</p>
+                  <p>Sou o tipo de pessoa que faz o seu meu melhor nas condições que tem, razão esta, que faz eu me considerar
+                    como um adepto do autoditadistmo, esforço, organização e muita disposição me sobram. Eu sempre coloco o
+                    coração até mesmo nas menores coisas que faço, pois acredito que esse é o caminho para o sucesso.</p>
+      
+                  <p>Boas vindas!!!</p>
+              </div>
+            </div>
+            <div class="caixaRodape-cartao-profissional-verso">
+              <div class="rodape-cartao-profissional-verso">
+                <a href="#" class="download-curriculo btn-hover-curriculo" data-text="Currículo"><span>Currículo</span></a>
+                <div class='r_wrap'>
+                  <div class='b_round'></div>
+                  <div class='s_round'>
+                    <div class="botao-flip-cartao-profissional">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- fim do verso cartao profissional -->
           <!-- ---------------------------------------- -->
-        </div><!-- end col -->
+        </div><!-- end col 
+        <div class='r_wrap'>
+          <div class='b_round'></div>
+          <div class='s_round'>
+            <div class='s_arrow'></div>
+          </div>-->
+        </div>
       </div><!-- end row -->
     </div><!-- end container -->
   </div><!-- end section -->
@@ -493,6 +530,32 @@
   <!-- MIDIA -->
   <script src="js/redesenhar.js"></script>
   <script src="js/midia.js"></script>
+
+  <script>
+  $(document).ready(function () {
+
+    var s_round = '.s_round';
+
+    $(s_round).hover(function () {
+      $('.b_round').toggleClass('b_round_hover');
+      return false;
+    });
+
+    $(s_round).click(function () {
+      $('.flip_box').toggleClass('flipped');
+      $(this).addClass('s_round_click');
+      $('.s_arrow').toggleClass('s_arrow_rotate');
+      $('.b_round').toggleClass('b_round_back_hover');
+      return false;
+    });
+
+    $(s_round).on('transitionend', function () {
+      $(this).removeClass('s_round_click');
+      $(this).addClass('s_round_back');
+      return false;
+    });
+  });
+  </script>
 
 </body>
 
