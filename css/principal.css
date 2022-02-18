@@ -35,7 +35,7 @@ body .service-widget h3 {
 body .service-widget {
     margin: 0 0 30px;
     padding: 30px;
-    background-color: #fff
+    background-color: #fff;
 }
 
 body .container-fluid {
@@ -62,7 +62,8 @@ h6 {
     font-weight: normal;
     line-height: 120% !important;
     color: #333333;
-    margin: 0
+    margin: 0;
+    
 }
 
 h1 {
@@ -152,75 +153,6 @@ ul, li, ol{
 
 
 /*------------------------------------------------------------------
-    SECTIONS
--------------------------------------------------------------------*/
-
-.main-banner{
-	height: 100%;
-	position: relative;
-}
-
-.main-banner{
-	display: table;
-    width: 100%;
-	text-align: center;
-}
-.main-banner::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    z-index: 0;
-    opacity: .6;
-}
-.heading{
-	color: #fff;
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
-}
-.heading h1{
-	color: #ffffff;
-	font-weight: 700;
-	font-size: 62px;
-	text-transform: uppercase;
-}
-.heading p{
-	font-size: 18px;
-	padding: 20px 0px;
-}
-
-.heading h3{
-	color: ffffff;
-}
-
-.cd-words-wrapper {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-}
-.cd-words-wrapper b {
-  display: inline-block;
-  position: absolute;
-  white-space: nowrap;
-  left: 0;
-  top: 0;
-}
-.cd-words-wrapper b.is-visible {
-  position: relative;
-}
-.no-js .cd-words-wrapper b {
-  opacity: 0;
-}
-.no-js .cd-words-wrapper b.is-visible {
-  opacity: 1;
-}
-
-/*------------------------------------------------------------------
     BUTTONS
 -------------------------------------------------------------------*/
 
@@ -253,4 +185,84 @@ ul, li, ol{
 .btn-light:focus {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
+} 
+
+.noover {
+    overflow: visible;
+}
+
+.noover .btn-dark {
+    border: 0 !important;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.nopadtop {
+    padding-top: 0;
+}
+
+.macbookright {
+    width: 980px;
+    position: absolute;
+    right: -15%;
+    bottom: -6%;
+}
+
+.btn-hover-new{
+    color: #333333;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    border: 1px solid #333333;
+    overflow: hidden;
+    padding: 0px 18px;
+    display: inline-block;
+}
+.sim-btn{
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.btn-hover-new::after {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transform: translate(-30%, 0);
+    transform: translate(-30%, 0);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-hover-new span {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-hover-new:hover{
+    color: #ffffff;
+    background-color: #333333;
+}
+.btn-hover-new:hover > span {
+    opacity: 0;
+    -webkit-transform: translate(0px,40px);
+    transform: translate(0px,40px);
+}
+.btn-hover-new:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
