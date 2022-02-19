@@ -1,0 +1,125 @@
+.caixa-cartao-profissional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cartao-profissional {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: beige;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.coluna-sobreB, .coluna-sobreA {
+    display: flex;
+    align-items: center;
+}
+/* ********************************************** */
+/* frente *************************************** */
+/* ********************************************** */
+.caixaDaImagem-cartao-profissional {
+    /*position: absolute;
+    top: -190px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background: #333;
+    clip-path: circle();*/
+}
+.caixaDaImagem-cartao-profissional::before {
+    /*content: '';
+    position: absolute;
+    top: -8px;
+    left: -16px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: 0 0 0 20px rgb(255, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 1000;
+    pointer-events: none;*/
+}
+.imagem-cartao-profissional {
+    /**/position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 310px;
+    background: lightgray;
+}
+.imagem-cartao-profissional img {
+    position: absolute;
+    top: 0;
+    right: 0/*-10px*/;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    /*transform-origin: top;*/
+}
+.imagem-cartao-profissional:hover img {
+    /*transform: scale(1.1);*/
+}
+.caixaInformacoes-cartao-profissional-frente {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(255, 255, 255); /* Fallback color */
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caixaInformacoes-cartao-profissional-frente a {
+    width: fit-content;
+}
+
+.caixaInformacoes-cartao-profissional-frente h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* margin-top: 7px; */
+    padding: 0;
+}
+.informacoes-cartao-profissional-frente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.informacoes-cartao-profissional-frente h5{ 
+    padding: 0;
+    font-weight: 900 !important;
+    color: #e91e39;
+}
+.fa-arrow-right {
+    color: #e91e39;
+    transition: 0.1s;
+    transform-origin: left;
+}
+
+
+
+/* */
+
+.fa {
+    /*padding: 20px;
+    font-size: 30px;
+    margin: 5px 2px;
+    width: 50px;
+    text-align: center;*/
+    text-decoration: none;
+    
+  }
+  
+  .fa:hover {
+      transform: scale(1.5);
+      color: #e91e39;
+  }  
+
+
+
