@@ -39,7 +39,7 @@
     /*transform-origin: top;*/
 }
 .imagem-cartao-profissional:hover img {
-    /*transform: scale(1.1);*/
+    /*transform: scale(1.1);*/ 
 }
 .caixaInformacoes-cartao-profissional-frente {
     position: absolute;

@@ -16,7 +16,7 @@
 }
 .caixa-secao {
     /*background-color:darkkhaki;*/
-    height: 100%;
+    height: 100%; 
     display: flex;
     flex-direction: column;
 }
