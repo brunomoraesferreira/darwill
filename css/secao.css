@@ -13,6 +13,7 @@
     FONT-VARIANT: JIS78;
     display: flex;
     align-items: center;
+    border: 1px solid goldenrod;
 }
 .caixa-secao {
     /*background-color:darkkhaki;*/
@@ -33,7 +34,7 @@
     /*background-color: lightgreen;*/
     box-sizing: border-box;
     margin: 0;
-    flex: 0 0 85%;
+    flex: 0 0 84%;
     /* display: flex; */
     /* justify-content: stretch; */
 }
