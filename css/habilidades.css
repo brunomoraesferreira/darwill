@@ -7,6 +7,7 @@ background-color: #fff;
 /*margin-top: -30px;*/
 padding: 15px 0;
 max-width: 550px;
+margin: auto;
 }
 .coluna-habilidades h4 {
   padding: 0;
@@ -86,4 +87,10 @@ max-width: 550px;
 
 .caixa-habilidades {
   box-shadow: var(--shadow-elevation-medium);
+}
+
+@media only screen and (max-width:992px){
+#habilidades .ocultar {
+  display: none;
+}
 }
