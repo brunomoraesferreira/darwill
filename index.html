@@ -15,7 +15,6 @@
 <meta name="author" content="">
 
 <!-- font-awesome-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Site Icons --><!-- apagar -->
 <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
@@ -108,46 +107,72 @@
       <a href="#contato" title="vai para a secao contato" class="sim-btn btn-hover-new js-scroll-trigger" data-text="Contato"><span>Contato</span></a>
     </div>
   </section>
+<!---->
 
-  <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
-    viewBox="0 0 85 100" preserveAspectRatio="none">
-    <path d="M-5 100 Q 0 20 5 100 Z
-            M0 100 Q 5 0 10 100
-            M5 100 Q 10 30 15 100
-            M10 100 Q 15 10 20 100
-            M15 100 Q 20 30 25 100
-            M20 100 Q 25 -10 30 100
-            M25 100 Q 30 10 35 100
-            M30 100 Q 35 30 40 100
-            M35 100 Q 40 10 45 100
-            M40 100 Q 45 50 50 100
-            M45 100 Q 50 20 55 100
-            M50 100 Q 55 40 60 100
-            M55 100 Q 60 60 65 100
-            M60 100 Q 65 50 70 100
-            M65 100 Q 70 20 75 100
-            M70 100 Q 75 45 80 100
-            M75 100 Q 80 30 85 100
-            M80 100 Q 85 20 90 100
-            M85 100 Q 90 50 95 100
-            M90 100 Q 95 25 100 100
-            M95 100 Q 100 15 105 100 Z">
-    </path>
-  </svg>
+<svg class="ondas"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+viewBox="0 0 1300 100" 
+xml:space="preserve">
+<style type="text/css">
+	.st1{opacity:0.6;fill:#fff;enable-background:new;}
+</style>
+
+    <path class="st1" d="M 0 50 C 400 250 450 -100 1300 50 L 1300 150 L 0 150 L 0 50">
+			<animate
+        attributeName="d"
+        dur="5s"
+				begin="1s"
+        values="M 0 50 C 400 250 450 -100 1300 50 L 1300 150 L 0 150 L 0 50;
+                M 0 50 C 400 -100 450 250 1300 50 L 1300 150 L 0 150 L 0 50;
+				        M 0 50 C 400 250 450 -100 1300 50 L 1300 150 L 0 150 L 0 50"
+        repeatCount="indefinite"
+        />
+	</path>
+	<path class="st1" d="M 0 50 C 400 -100 450 250 1300 50 L 1300 150 L 0 150 L 0 50">
+		<animate
+        attributeName="d"
+        dur="5s"
+        values="M 0 50 C 400 -100 450 250 1300 50 L 1300 150 L 0 150 L 0 50;
+                M 0 50 C 400 250 450 -100 1300 50 L 1300 150 L 0 150 L 0 50;
+				        M 0 50 C 400 -100 450 250 1300 50 L 1300 150 L 0 150 L 0 50"
+        repeatCount="indefinite"
+        />
+	</path>
+	<path class="st1" d="M 0 50 C 750 150 750 -50 1300 50 L 1300 150 L 0 150 L 0 50">
+		<animate
+        attributeName="d"
+        dur="5s"
+				begin="2s"
+        values="M 0 50 C 750 150 750 -50 1300 50 L 1300 150 L 0 150 L 0 50;
+                M 0 50 C 150 -50 150 150 1300 50 L 1300 150 L 0 150 L 0 50;
+				        M 0 50 C 750 150 750 -50 1300 50 L 1300 150 L 0 150 L 0 50"
+        repeatCount="indefinite"
+        />
+	</path>
+	<path class="st1" d="M 0 50 C 150 -50 150 150 1300 50 L 1300 150 L 0 150 L 0 50">
+		<animate
+        attributeName="d"
+        dur="5s"
+        values="M 0 50 C 150 -50 150 150 1300 50 L 1300 150 L 0 150 L 0 50;
+                M 0 50 C 750 150 750 -50 1300 50 L 1300 150 L 0 150 L 0 50;
+			          M 0 50 C 150 -50 150 150 1300 50 L 1300 150 L 0 150 L 0 50"
+        repeatCount="indefinite"
+        />
+	</path>
+</svg>
   <!-- ------------------------------------------------------------------------ -->
   <section id="sobre" class="section">
-    <div class="container caixa-secao perspectiva">
+    <div class="container caixa-secao">
       <div class="titulo-secao text-left">
-        <h3>Sobre Mim</h3>
+        <h3>Sobre</h3>
       </div><!-- fim title -->
       <div class="row conteudo-secao">
         <div class="col-md-12 col-sm-12">
-          Coluna B
+          Coluna A
         </div><!-- fim col -->
       </div><!-- fim row -->
-    </div><!-- fim container-secao -->
-  </section><!-- fim caixa-secao -->
-
+    </div><!-- fim caixa-secao -->
+  </section><!-- fim section -->
   <!-- ------------------------------------------------------------------------ -->
   <section id="habilidades" class="section">
     <div class="container caixa-secao">
@@ -155,160 +180,9 @@
         <h3>Habilidades</h3>
       </div><!-- fim title -->
       <div class="row conteudo-secao">
-        <div class="col-lg-7 col-md-12 col-sm-12">
-          <div class="caixa-habilidades">
-            <div class="coluna-habilidades">
-              <div class="primLinha-habilidades">
-                <h4>Linguagens</h4>
-              </div>
-              <a href="htmlaprendizado.html">
-                <div class="linha-habilidades">
-                  <p>HTML</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>CSS</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>JS</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>PHP</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>SQL</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                    <p>XML</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Python</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>C/C++</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>C#</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Java</p>
-                </div>
-              </a>
-            </div>
-            <div class="coluna-habilidades">
-              <div class="primLinha-habilidades">
-                <h4>Softwares</h4>
-              </div>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Adobe Photoshop</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Adobe Illustrator</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Adobe Premiere</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Adobe InDesign</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Adobe XD</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Adobe After Effect</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>ZBrush</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>blender3d</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>figma</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>mental canvas</p>
-                </div>
-              </a>
-            </div>
-            <div class="coluna-habilidades">
-              <div class="primLinha-habilidades plh-div">
-                <h4>Diversos</h4>
-              </div>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>fotografia</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="linha-habilidades">
-                  <p>Ilustração</p>
-                </div>
-              </a>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-              <div class="linha-habilidades vazio">
-                <p>&nbsp;</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-12 col-sm-12">
+          Coluna C
         </div><!-- fim col -->
-        <div class="col-lg-5 ocultar"></div>
       </div><!-- fim row -->
     </div><!-- fim caixa-secao -->
   </section><!-- fim section -->
@@ -391,29 +265,21 @@
 <!-- ------------------------------------------------ -->
 <!-- arquivos java script                             -->
 <!-- ------------------------------------------------ -->
-  <!-- ALL JS FILES -->
+  <!-- VARIOS JS -->
   <script src="js/all.js"></script>
-
-  <!-- Camera Slider -->
-  <script src="js/jquery.mobile.customized.min.js"></script>
+  
+  <!-- ----- -->
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/parallaxie.js"></script>
   <script src="js/headline.js"></script>
 
-  <!-- contato form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- ALL PLUGINS -->
+  <!-- ----- -->
   <script src="js/custom.js"></script>
-  <script src="js/jquery.vide.js"></script>
 
   <!-- MIDIA -->
   <script src="js/redesenhar.js"></script>
   <script src="js/midia.js"></script>
 
-  <!-- FLIP -->
-  <script src="js/flip.js"></script>
 
 </body>
 
