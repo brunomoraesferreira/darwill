@@ -153,13 +153,13 @@ ul, li, ol{
 
 
 .ondas {
-    margin-top: -5%;
+    margin-top: -6.5%;
     position: absolute;
     z-index: 1000;
 }
 .ondas path {
     fill: #ffffff;
-    bottom: -10px;
+    /*bottom: -10px;*/
     overflow: hidden;
     stroke: #ffffff;
 }
