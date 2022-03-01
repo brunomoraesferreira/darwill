@@ -1,0 +1,31 @@
+.col-secao-sobreA {
+    background-color: red;
+}
+.col-secao-sobreB {
+    background-color: blue;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .col-secao-sobreA {
+        background-color: green;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+    .col-secao-sobreB {
+        background-color: purple;
+        height: 100%;
+        position: absolute;
+    }
+    
+    #sobre .row {
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+}
+@media screen and (min-width: 768px) {
+
+}
