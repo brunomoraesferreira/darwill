@@ -161,7 +161,7 @@ xml:space="preserve">
 	</path>
 </svg>
   <!-- ------------------------------------------------------------------------ -->
-  <section id="sobre" class="section">
+  <section id="sobre" class="secao">
     <div class="container caixa-secao">
       <div class="titulo-secao text-left">
         <h3>Sobre</h3>
@@ -172,9 +172,9 @@ xml:space="preserve">
         </div><!-- fim col -->
       </div><!-- fim row -->
     </div><!-- fim caixa-secao -->
-  </section><!-- fim section -->
+  </section><!-- fim secao-->
   <!-- ------------------------------------------------------------------------ -->
-  <section id="habilidades" class="section">
+  <section id="habilidades" class="secao">
     <div class="container caixa-secao">
       <div class="titulo-secao text-left">
         <h3>Habilidades</h3>
@@ -185,9 +185,9 @@ xml:space="preserve">
         </div><!-- fim col -->
       </div><!-- fim row -->
     </div><!-- fim caixa-secao -->
-  </section><!-- fim section -->
+  </section><!-- fim secao-->
   <!-- ------------------------------------------------------------------------ -->
-  <section id="galeria" class="section">
+  <section id="galeria" class="secao">
     <div class="container caixa-secao">
       <div class="titulo-secao text-left">
         <h3>Galeria</h3>
@@ -198,9 +198,9 @@ xml:space="preserve">
         </div><!-- fim col -->
       </div><!-- fim row -->
     </div><!-- fim caixa-secao -->
-  </section><!-- fim section -->
+  </section><!-- fim secao-->
   <!-- ------------------------------------------------------------------------ -->
-  <section id="blog" class="section">
+  <section id="blog" class="secao">
     <div class="container caixa-secao">
       <div class="titulo-secao text-left">
         <h3>Blog</h3>
@@ -211,9 +211,9 @@ xml:space="preserve">
         </div><!-- fim col -->
       </div><!-- fim row -->
     </div><!-- fim caixa-secao -->
-  </section><!-- fim section -->
+  </section><!-- fim secao-->
   <!-- ------------------------------------------------------------------------ -->
-  <section id="midias" class="section">
+  <section id="midias" class="secao">
     <div class="container caixa-secao">
       <div class="titulo-secao text-left">
         <h3>Mídias Sociais</h3>
@@ -224,9 +224,9 @@ xml:space="preserve">
         </div><!-- fim col -->
       </div><!-- fim row -->
     </div><!-- fim caixa-secao -->
-  </section><!-- fim section -->
+  </section><!-- fim secao-->
   <!-- ------------------------------------------------------------------------ -->
-  <section id="contato" class="section db">
+  <section id="contato" class="secao db">
     <div class="container caixa-secao">
       <div class="titulo-secao text-left">
         <h3>Contato</h3>
@@ -237,7 +237,7 @@ xml:space="preserve">
         </div><!-- fim col -->
       </div><!-- fim row -->
     </div><!-- fim caixa-secao -->
-  </section><!-- fim section -->
+  </section><!-- fim secao-->
   <!-- ------------------------------------------------------------------------ -->
   <div class="copyrights">
     <div class="container">
@@ -281,6 +281,16 @@ xml:space="preserve">
   <script src="js/midia.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(function() {
+      $.scrollify({
+        section : ".secao",
+        offset : -53, 
+        scrollbars : false , 
+      });
+    });
+  </script>
 </body>
 
 </html>

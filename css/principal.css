@@ -21,7 +21,7 @@ html, body{
 	height: 100%;
 }
 
-body .section {
+body .secao {
     background: url(../imagens/bg.png) repeat top center #f2f3f5;
 }
 

@@ -1,11 +1,11 @@
-.section:nth-child(odd) {
+.secao:nth-child(odd) {
     background-color: #ffffff;
 }
-.section:nth-child(even) {
+.secao:nth-child(even) {
     background-color: #f2f3f5;
 }
 
-.section {
+.secao {
     height: 100vh;
     /*padding-top: 70px 0;*/
     /*height: calc(100vh - 50px);*/
