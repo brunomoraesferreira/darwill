@@ -10,10 +10,12 @@
 
 /*Miscelânea*/
 @import url(css/principal.css);
-@import url(css/secao.css);
 @import url(css/pre-loader.css);
-@import url(css/header.css);
+@import url(css/secao.css);
 @import url(css/para-o-topo.css);
+
+@import url(css/header.css);
+@import url(css/footer.css);
 
 /*Seções*/
 @import url(css/inicio.css);

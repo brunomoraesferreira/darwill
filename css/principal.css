@@ -9,6 +9,9 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
+html, body{
+	height: 100%;
+}
 
 body {
     color: #999999;
@@ -17,9 +20,6 @@ body {
     line-height: 1.80857;
 }
 
-html, body{
-	height: 100%;
-}
 
 body .secao {
     background: url(../imagens/bg.png) repeat top center #f2f3f5;
