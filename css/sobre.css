@@ -1,21 +1,32 @@
 .col-secao-sobreA {
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .col-secao-sobreB {
     background-color: blue;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 470px;
+    background-color: wheat;
+
 }
 
 
 
 @media screen and (max-width: 767px) {
     .col-secao-sobreA {
-        background-color: green;
+        background-color: orange;
         height: 100%;
         position: absolute;
         z-index: 2;
     }
     .col-secao-sobreB {
-        background-color: purple;
+        background-color: blueviolet;
         height: 100%;
         position: absolute;
     }
