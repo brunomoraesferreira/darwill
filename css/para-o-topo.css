@@ -4,7 +4,7 @@
 
 .dmtop {
     background-color: #3c3d41;
-    z-index: 100;
+    z-index: 1000;
     width: 50px;
     height: 50px;
     line-height: 47px;
