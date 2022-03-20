@@ -97,9 +97,11 @@
     transition: 0.5s;
     transform-origin: top;
 }
+/*
 .caixaDaImagem-cartao-profissional .imagem-cartao-profissional:hover img {
     transform: scale(1.5);
 }
+*/
 .caixaInformacoes-cartao-profissional-frente {
     position: absolute;
     left: 0;
@@ -117,6 +119,7 @@
 .fa-linkedin {
     background: #0077b5;
     color: white;
+    font-size: 1rem;
     padding: 3px 5px;
     border-radius: 2px;
 }
@@ -187,10 +190,8 @@
     font-weight: 700;    
 }
 .texto-cartao-profissional p{
-    font-size: 0.713rem;
-    margin-bottom: 3px;
-    line-height: 1.7;
-    
+    font-size: 0.75rem;
+    margin-bottom: 3px;    
 }
 .caixaRodape-cartao-profissional-verso {
     position: absolute;
@@ -221,11 +222,11 @@
 .s_round {
   position: absolute;
   right: 20px;
-  bottom: 45px;
+  bottom: 50px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.5);
   transition: all 0.2s linear;
   display: flex;
   align-items: center;
@@ -237,19 +238,16 @@
     background-color: rgba(255, 0, 0, 0.5);
   }
   
-  .b_round_hover {
-    transform: scale(1.37);
-    opacity: 0.4;
-  }
+
 .fa-arrow-right {
     color: #fff;
     transition: 0.1s;
 }
-/*
+
 .fa-arrow-right:hover {
     transform: scale(1.2);
     font-weight: 900 !important;
-}*/
+}
 
 
 /* *********************************** */
