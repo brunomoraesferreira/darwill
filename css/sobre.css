@@ -327,8 +327,9 @@
   .flipped {
     transform: rotateY(-180deg);
   }
+  /*
   .col-secao-sobreB {
-}
+}*/
   .col-secao-sobreB video {
     position: absolute;
       width: 100%;
