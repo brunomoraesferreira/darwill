@@ -4,9 +4,10 @@
     justify-content: center;
     position: relative;
 }
+/*
 .col-secao-sobreB {
 }
-
+*/
 @media screen and (max-width: 767px) {
     .col-secao-sobreA {
         height: 100%;
@@ -16,6 +17,7 @@
     .col-secao-sobreB {
         height: 100%;
         position: absolute;
+        display: none;
     }
     
     #sobre .row {
@@ -326,7 +328,6 @@
     transform: rotateY(-180deg);
   }
   .col-secao-sobreB {
-    position: relative;
 }
   .col-secao-sobreB video {
     position: absolute;
