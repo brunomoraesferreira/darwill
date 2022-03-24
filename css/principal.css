@@ -53,7 +53,6 @@ border-bottom:1px solid black;
 main {
 display: flex;
 flex-direction: column;
-
 height:100%;
 }
 footer {
@@ -70,20 +69,17 @@ font-size:2vh;
 
 .capa {
 height:40%;
-border-bottom:1px solid black;
 }
 .conteudo {
 height:60%;
+width: 100%;
 display:flex;
-
+justify-content: center;
 }
-.conteudo div {
-border: 1px solid black;
-}
-
 
 .slider {
 height:100%;
+width: 99%;
 text-align: center;
 overflow: hidden;
 
@@ -111,11 +107,11 @@ border-radius: 10px;
 background: transparent;
 }
 .slides > div {
-scroll-snap-align: start;
+scroll-snap-align: center;
 flex-shrink: 0;
 width:100%;
 height:100%;
-margin-right: 50px;
+margin: 0 25px;
 border-radius: 5px;
 background: #eee;
 transform-origin: center center;
@@ -126,21 +122,22 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 100px;
+font-size: 50px;
 }
 
 nav {
 display:flex;
+justify-content: space-between;
 height:9%;
 }
 nav > a {
-flex: 1 1 20%;
+flex: 0 0 19.9%;
 display: inline-flex;
 background: white;
 text-decoration: none;
 align-items: center;
 justify-content: center;
-margin:0 0.2% 0.3%;
+margin-bottom: 0.2%;
 border-radius:2px;
 position: relative;
 font-size:50%;
