@@ -1,4 +1,3 @@
-
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 
@@ -87,7 +86,7 @@ overflow: hidden;
 
 .slides {
 display: flex;
-height:90%;
+height:91%;
 overflow-x: auto;
 scroll-snap-type: x mandatory;
 
@@ -97,7 +96,7 @@ scroll-behavior: smooth;
 
 .slides::-webkit-scrollbar {
 width: 5px;
-height: 3px;
+height: 5px;
 }
 .slides::-webkit-scrollbar-thumb {
 background: black;
