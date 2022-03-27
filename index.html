@@ -39,27 +39,27 @@
 				<div class="slider">
 
 					<nav>
-						<a href="#slide-1"  id="´abertoPorPadrao" class="tablinks" onclick="openCity(event, 'slide-1')">Linguagens</a>
-						<a href="#slide-2"  class="tablinks" onclick="openCity(event, 'slide-2')">Designer Digital</a>
-						<a href="#slide-3"  class="tablinks" onclick="openCity(event, 'slide-3')">Fotografia</a>
-						<a href="#slide-4"  class="tablinks" onclick="openCity(event, 'slide-4')">blog</a>
-						<a href="#slide-5"  class="tablinks" onclick="openCity(event, 'slide-5')">Sobre</a>
+						<a href="#slide-1">Linguagens</a>
+						<a href="#slide-2">Designer Digital</a>
+						<a href="#slide-3">Fotografia</a>
+						<a href="#slide-4">blog</a>
+						<a href="#slide-5">Sobre</a>
 					</nav>
 
 					<div class="slides">
-						<div id="slide-1" class="tabcontent ">
+						<div id="slide-1">
 							um
 						</div>
-						<div id="slide-2" class="tabcontent">
+						<div id="slide-2">
 							dois
 						</div>
-						<div id="slide-3" class="tabcontent">
+						<div id="slide-3">
 							tres
 						</div>
-						<div id="slide-4" class="tabcontent">
+						<div id="slide-4">
 							quatro
 						</div>
-						<div id="slide-5" class="tabcontent">
+						<div id="slide-5">
 							cinco
 						</div>
 					</div>
@@ -71,31 +71,6 @@
 		</footer>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	<script src="js/headline.js"></script>
-	<script>
-		function openCity(evt, cityName) {
-			// Declare all variables
-			var i, tabcontent, tablinks;
-
-			// Get all elements with class="tabcontent" and hide them
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.background = "#eee";
-			}
-
-			// Get all elements with class="tablinks" and remove the class "active"
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-
-			// Show the current tab, and add an "active" class to the button that opened the tab
-			document.getElementById(cityName).style.background = "white";
-			evt.currentTarget.className += " active";
-		}
-	</script>
-	<script>
-		document.getElementById("´abertoPorPadrao").click();
-		</script>
 </body>
 
 </html>

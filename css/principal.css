@@ -145,17 +145,12 @@ top: 1px;
 
 
 
-/*
+
 nav > a:link {text-decoration: none;}
 nav > a:visited {text-decoration: none;}
 nav > a:hover {text-decoration: none;}
 nav > a:active {text-decoration: none; background-color: white;}
-nav > a:focus {text-decoration: none;}*/
-
-.active {
-    background-color: white;
-    font-weight: 700;
-}
+/*nav > a:focus {text-decoration: none;}*/
 
 
 
