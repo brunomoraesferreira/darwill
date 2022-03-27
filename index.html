@@ -39,15 +39,15 @@
 				<div id="slider" class="slider">
 
 					<nav>
-						<a href="#slide-1" data-tablinks="slide-1" class="tablinks" onclick="openCity(event, 'slide-1')" id="abertoPorPadrao" >Linguagens</a>
-						<a href="#slide-2" data-tablinks="slide-2" class="tablinks" onclick="openCity(event, 'slide-2')">Designer Digital</a>
-						<a href="#slide-3" data-tablinks="slide-3" class="tablinks" onclick="openCity(event, 'slide-3')">Fotografia</a>
-						<a href="#slide-4" data-tablinks="slide-4" class="tablinks" onclick="openCity(event, 'slide-4')">blog</a>
-						<a href="#slide-5" data-tablinks="slide-5" class="tablinks" onclick="openCity(event, 'slide-5')">Sobre</a>
+						<a href="#slide-1" data-tablinks="slide-1" class="tablinks" onclick="openCity(event, 'slide-1')" id="guia-1">Linguagens</a>
+						<a href="#slide-2" data-tablinks="slide-2" class="tablinks" onclick="openCity(event, 'slide-2')" id="guia-2">Designer Digital</a>
+						<a href="#slide-3" data-tablinks="slide-3" class="tablinks" onclick="openCity(event, 'slide-3')" id="guia-3">Fotografia</a>
+						<a href="#slide-4" data-tablinks="slide-4" class="tablinks" onclick="openCity(event, 'slide-4')" id="guia-4">blog</a>
+						<a href="#slide-5" data-tablinks="slide-5" class="tablinks" onclick="openCity(event, 'slide-5')" id="guia-5">Sobre</a>
 					</nav>
 
 					<div class="slides">
-						<div id="slide-1" class="tabcontent ">
+						<div id="slide-1" class="tabcontent">
 							um
 						</div>
 						<div id="slide-2" class="tabcontent">
@@ -98,27 +98,29 @@
 	</script>
 	<script>
 		//Pegar o elemento de id='abertoPorPadrão' e clicar nele
-		document.getElementById("abertoPorPadrao").click();
+		document.getElementById("guia-1").click();
 	</script>
 	<script>
+
 		//declarar as variaveis
-		const target = document.querySelectorAll('[data-tablinks]');
+		const alvo = document.querySelectorAll('[data-tablinks]');
 		const animationClass = 'animate';
 		const elemento = document.getElementById("slider");
 
 		
 		function animeScroll() {
+			
 			//visualizar no log
 			console.log('ok');
-			console.log(tabName);
-			//document.getElementById(tabName).style.background = "white";
-			//evt.currentTarget.className += " animate";
+			
+
 		}
 
 		
 		
 		elemento.addEventListener('touchstart', function() {
 				animeScroll();
+				
 				//document.getElementById("fname").style.backgroundColor = "red";
 		});
 	</script>
