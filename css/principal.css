@@ -167,3 +167,11 @@ nav > a:focus {text-decoration: none;}*/
     to {opacity: 1;}
   }
 
+/*
+  [data-tablinks] {
+    background-color: red;
+  }
+  */
+  [data-tablinks="slide-1"].animate {
+    background-color: green;
+}
