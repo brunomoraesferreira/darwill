@@ -47,19 +47,19 @@
 					</nav>
 
 					<div class="slides">
-						<div id="slide-1" class="tabcontent">
+						<div id="slide-1" class="tabcontent" ontouchstart="openCity(event, 'slide-1')">
 							um
 						</div>
-						<div id="slide-2" class="tabcontent">
+						<div id="slide-2" class="tabcontent" ontouchstart="openCity(event, 'slide-2')">
 							dois
 						</div>
-						<div id="slide-3" class="tabcontent">
+						<div id="slide-3" class="tabcontent" ontouchstart="openCity(event, 'slide-3')">
 							tres
 						</div>
-						<div id="slide-4" class="tabcontent">
+						<div id="slide-4" class="tabcontent" ontouchstart="openCity(event, 'slide-4')">
 							quatro
 						</div>
-						<div id="slide-5" class="tabcontent">
+						<div id="slide-5" class="tabcontent" ontouchstart="openCity(event, 'slide-5')">
 							cinco
 						</div>
 					</div>
@@ -100,29 +100,7 @@
 		//Pegar o elemento de id='abertoPorPadrão' e clicar nele
 		document.getElementById("guia-1").click();
 	</script>
-	<script>
-
-		//declarar as variaveis
-		const alvo = document.querySelectorAll('[data-tablinks]');
-		const animationClass = 'animate';
-		const elemento = document.getElementById("slider");
-
-		
-		function animeScroll() {
-			
-			//visualizar no log
-			console.log('ok');
-			
-
-		}
-
-		
-		
-		elemento.addEventListener('touchstart', function() {
-				animeScroll();
-				
-				//document.getElementById("fname").style.backgroundColor = "red";
-		});
+	
 	</script>
 </body>
 
