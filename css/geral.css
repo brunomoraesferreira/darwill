@@ -19,12 +19,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+/*
 a:link {text-decoration: none;color: #000;}
 a:visited {text-decoration: none;color: #000;}
 a:hover {text-decoration: none;color: #000;}
 a:active {text-decoration: none;color: #000;}
-
+*/
 @font-face {
 font-family: "nome_da-fonte";
 src: url("endereco_da_fonte");

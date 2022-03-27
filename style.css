@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+/**/
+@import url(css/geral.css);
+
+/*plugins*/
+@import url(css/bootstrap.min.css);
+@import url(css/font-awesome.min.css);
+
+/*Miscelânea*/
+@import url(css/principal.css);
+@import url(css/pre-loader.css);
+@import url(css/secao.css);
+@import url(css/para-o-topo.css);
+
+@import url(css/header.css);
+@import url(css/footer.css);
+
+/*Seções*/
+@import url(css/inicio.css);
+@import url(css/sobre.css);
+@import url(css/habilidades.css);
+@import url(css/galeria.css);
+@import url(css/blog.css);
+@import url(css/midias.css);
+@import url(css/contato.css);
+
+/**/ 
+@import url(css/responsive.css);
+@import url(css/custom.css);

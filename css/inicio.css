@@ -1,9 +1,12 @@
+
 .main-banner{
+	height: 100%;
 	position: relative;
 }
 
 .main-banner{
 	display: table;
+    width: 100%;
 	text-align: center;
 }
 .main-banner::after {
@@ -29,14 +32,14 @@
 	position: relative;
 	z-index: 1;
 }
-.heading h2{
+.heading h1{
 	color: #ffffff;
 	font-weight: 700;
-	font-size: 46px;
+	font-size: 62px;
 	text-transform: uppercase;
 }
 .heading p{
-	font-size: 12px;
+	font-size: 18px;
 	padding: 20px 0px;
 }
 
@@ -73,7 +76,7 @@ xclip
     display: inline-block;
     padding: .2em 0;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 30px;
   }
   .cd-headline.clip span b{
       text-transform: uppercase;
@@ -98,4 +101,24 @@ xclip
   .cd-headline.clip b.is-visible {
     opacity: 1;
   }
+/* -------------------------------- 
+
+-------------------------------- */
+  
+ 
+  #clouds{
+      margin-top: -5%;
+      position: relative;
+      z-index: 1;
+  }
+  #clouds path {
+      fill: #ffffff;
+      bottom: -10px;
+      overflow: hidden;
+      stroke: #ffffff;
+  }
+  
+ 
+  
+
 

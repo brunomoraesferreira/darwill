@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+.navbar-dark{
+	
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-size: 14px;
+	position: relative;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #ffffff;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+	font-weight: 600;
+}
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0 auto;
+    border-radius: 0px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index: -1;
+}
+.navbar-dark .navbar-nav .nav-link.active::after {
+	width: 50%;
+}
+
+
+  
