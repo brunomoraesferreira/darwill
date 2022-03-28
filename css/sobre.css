@@ -1,6 +1,7 @@
 
 .apresentacao p {
     line-height: 1.6;
+    margin-bottom: 0.3rem;
 }
 
 .sobre img {
@@ -17,7 +18,7 @@
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 0px;
+    margin-top: 0.5rem;
     cursor: pointer;
     text-transform: uppercase;
 }
