@@ -38,9 +38,7 @@
     /* display: flex; */
     /* justify-content: stretch; */
 }
-.conteudo-secao p {
-    margin-bottom: 0;
-}
+
 .titulo-secao h3 {
     font-size: 38px;
     font-weight: 500;
