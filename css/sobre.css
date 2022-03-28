@@ -1,8 +1,63 @@
 
-.apresentacao {
+.apresentacao p {
+    line-height: 1.6;
 }
 
 .sobre img {
     width: 100%;
     height: auto;
+}
+
+/* *************** */
+/* botao curriculo */
+/* *************** */
+.download-curriculo {
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-hover-curriculo{
+color: #333333;
+transition: all 0.5s;
+position: relative;
+border: 1px solid #333333;
+overflow: hidden;
+padding: 0px 18px;
+display: inline-block;
+}
+
+.btn-hover-curriculo::after {
+content: attr(data-text);
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+transform: translate(-30%, 0);
+transition: all 0.3s;
+}
+
+.btn-hover-curriculo span {
+transition: all 0.3s;
+}
+
+.btn-hover-curriculo:hover{
+color: #ffffff;
+border-color: red;
+background-color: rgba(255, 0, 0, 0.7);
+}
+.btn-hover-curriculo:hover > span {
+opacity: 0;
+transform: translate(0px,40px);
+}
+.btn-hover-curriculo:hover::after {
+opacity: 1;
+transform: translate(0, 0);
 }
