@@ -48,7 +48,7 @@ flex-wrap: wrap;
   .plh-div {
     border-color: rgba(0,0,0,.125);
   }
-  .coluna-habilidades h4 {
+  .coluna-habilidades:nth-child(3) h4 {
     padding-top: 0;
     padding-bottom: 0;
   }
