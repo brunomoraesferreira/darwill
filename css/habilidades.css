@@ -5,11 +5,13 @@ display: flex;
 flex-wrap: wrap;
 }
 .coluna-habilidades h4 {
-  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 0.1rem;
   margin: 0;
   font-weight: bolder;
   /*font-family: 'Pacifico', cursive;*/
   color: #666;
+  color: blue;
   line-height: 1.583rem !important;
 }
 .coluna-habilidades p{
@@ -45,6 +47,10 @@ flex-wrap: wrap;
   }
   .plh-div {
     border-color: rgba(0,0,0,.125);
+  }
+  .coluna-habilidades h4 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 476px){
@@ -88,4 +94,13 @@ flex-wrap: wrap;
 .habilidades img {
     width: 100%;
     height: auto;
+    display: none;
+}
+
+.coluna-habilidades h5 {
+  padding: 0;
+  margin: 0;
+  line-height: 1.583rem !important;
+  font-weight: bolder;
+
 }
