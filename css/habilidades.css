@@ -4,11 +4,11 @@
   font-weight: 700;
   overflow: hidden;
 }
-.cartao-habilidade:nth-child(even) {
+.cartao-habilidade:nth-child(odd) {
   background-color: rgb(80, 80, 80);
   color: white;
 }
-.cartao-habilidade:nth-child(odd) {
+.cartao-habilidade:nth-child(even) {
   color: rgb(80, 80, 80);;
 }
 .cartao-habilidade {
@@ -23,5 +23,11 @@
 .cartao-habilidade div {
   width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+  .caixa-habilidades {
+    font-size: 1.2rem;
+  }
 }
 
