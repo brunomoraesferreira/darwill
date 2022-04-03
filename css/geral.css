@@ -9,6 +9,8 @@
     font-size: 100%;
     vertical-align: baseline;
     text-decoration:none;
+    user-select: none;
+
 }
 
 ol, ul {
